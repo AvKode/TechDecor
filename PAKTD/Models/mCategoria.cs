@@ -19,4 +19,5 @@ namespace PAKTD.Models
         [StringLength(20, ErrorMessage = "Máximo de caracteres é 20!")]
         public string DsCate { get; set; }
     }
+    
 }
