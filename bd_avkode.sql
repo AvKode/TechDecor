@@ -4,6 +4,7 @@ default collate utf8_general_ci;
 
 use bd_avkode;
 
+-- **********************************************TABELA CLIENTE(1)************************************************************************************
 create table tbl_Cliente
 (
 id_Cliente int primary key auto_increment,
@@ -21,6 +22,8 @@ constraint foreign key(id_Usu) references tbl_Usuario(id_Usu)
 )
 default charset utf8;
 
+
+-- **********************************************TABELA USUÁRIO(2)************************************************************************************
 create table tbl_Usuario
 (
 id_Usu int primary key auto_increment,
@@ -30,6 +33,9 @@ tipo_Usu char(1) not null
 )
 default charset utf8;
 
+
+
+-- ***********************************************TABELA CATEGORIA(3)************************************************************************************
 create table tbl_Categoria
 (
 id_Categoria int primary key auto_increment,
@@ -39,6 +45,7 @@ ds_Categoria varchar(100) not null
 default charset utf8;
 
 
+-- ************************************************TABELA PRODUTO(4)***********************************************************************************
 create table tbl_Produto
 (
 id_Produto int primary key auto_increment,
@@ -53,6 +60,8 @@ constraint foreign key(id_Categoria) references tbl_Categoria(id_Categoria)
 default charset utf8;
 
 
+
+-- **************************************************TABELA PLANO(5)************************************************************************************
 create table tbl_Plano
 (
 id_Plano int primary key auto_increment,
@@ -65,6 +74,8 @@ constraint foreign key(id_Produto) references tbl_Produto(id_Produto)
 default charset utf8;
 
 
+
+-- ***************************************************TABELA CARRINHO(6)*********************************************************************************
 create table tbl_Carrinho
 (
 id_Carrinho int primary key auto_increment,
@@ -79,6 +90,8 @@ constraint foreign key(id_Pagamento) references tbl_Pagamento(id_Pagamento)
 default charset utf8;
 
 
+
+-- ***************************************************TABELA PAGAMENTO(7)*******************************************************************************
 create table tbl_Pagamento(
 id_Pagamento int primary key auto_increment,
 ds_Pagamento varchar(50) not null
@@ -86,6 +99,8 @@ ds_Pagamento varchar(50) not null
 default charset utf8;
 
 
+
+-- ************************************************STORED PROCEDURE FORMA DE PAGAMENTO*****************************************************************
 create procedure sp_insPagamento(
 in p_ds_Pagamento varchar(50) -- parametro que a procedure vai receber
 )
@@ -98,12 +113,16 @@ call sp_insPagamento('Cartão de Débito'); -- chamando a proc sp_insPgto
 call sp_insPagamento('Boleto Bancário'); -- chamando a proc sp_insPgto
 call sp_insPagamento('Cartão Crédito'); -- chamando a proc sp_insPgto
 
+
+-- **************************************************STORED PROCEDURE MOSTRAR PAGAMENTO**************************************************************
 create procedure spMostrarPgto()
 select * from tbl_Pagamento;
 
 call spMostrarPgto();
 
--- procedure update
+
+
+-- **************************************************PROCEDURE UPDATE******************************************************************************************
 drop PROCEDURE if exists sp_UpdateCliente;
 DELIMITER $$
 CREATE PROCEDURE sp_UpdateCliUsu(
@@ -137,8 +156,8 @@ DELIMITER ;
 
 CALL sp_UpdateCliUsu(1, "Carlos Eduardo", "12345678", "A", "1", "Carlos", "carlos@gmail.com", "12345678912", "10/10/2010", "Rua Americo Brasiliense", "123", "Bloco A apto 2025", 05678120, "+5511989998999");
 
--- excluir pelo id
 
+-- ****************************************************PROCEDURE DELETE******************************************************************************
 drop PROCEDURE if exists sp_DeleteCliUsu;
 DELIMITER $$
 CREATE PROCEDURE sp_DeleteCliUsu(
@@ -156,6 +175,8 @@ DELIMITER ;
 
 CALL sp_DeleteCliUsu(1); 
 
+
+-- *******************************************************PROCEDURE ALTERAR PAGAMENTO*****************************************************************
 drop procedure if exists sp_AltPagamento;
 delimiter $$
 create procedure sp_AltPagamento(
@@ -170,7 +191,7 @@ delimiter ;
 
 call sp_AltPagamento('Cartão de Crédito', 4); -- executando a alteração na tbl_Pagamento
 
--- Procedure pesquisa pelo produto
+-- ********************************************PROCEDURE PESQUISAR PELO PRODUTO**********************************************************************
 DELIMITER $$
 CREATE PROCEDURE sp_BuscarProduto(
     IN p_BuscarProduto VARCHAR(50)
@@ -183,5 +204,4 @@ BEGIN
 END $$
 DELIMITER ;
 
-
-
+CALL sp_BuscarProduto('Carlos Eduardo');
