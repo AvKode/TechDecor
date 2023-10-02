@@ -282,8 +282,35 @@ delimiter ;
 call sp_AltPagamento('Cartão de Crédito', 4); -- executando a alteração na tbl_Pagamento
 
 /*##############################################   PROCEDURE INSERT PRODUTO   #################################################################################*/
+DROP PROCEDURE if exists pcd_insertProduto;
+DELIMITER $$   
+CREATE PROCEDURE pcd_insertProduto(              
+_idCategoria int,
+_nmProduto varchar(40),
+_dsProduto varchar(150),
+_vlProduto decimal(10,2),
+_stProduto bit(1),
+_urlProduto varchar(254)
+)
+	BEGIN
+		START TRANSACTION;  
+			INSERT INTO tbl_Produto(id_Categoria, nm_Produto, ds_Produto, vl_Produto, st_Produto, url_Produto)
+			VALUES(_idCategoria, _nmProduto, _dsProduto, _vlProduto, _stProduto, _urlProduto);    
+	COMMIT;
+		ROLLBACK;
+END $$
 
-/*###########################################   PROCEDURE PESQUISA PELO PRODUTO   ###################################################################*/
+CALL(1, "", "", , , "");
+
+/*###########################################   PROCEDURE PESQUISA PELO PRODUTO POR CÓDIGO  #########################################################*/
+DROP PROCEDURE IF EXISTS pcd_Select_ProdutoPorCod;
+DELIMITER $$   
+CREATE PROCEDURE pcd_Select_ProdutoPorCod( _idProduto int )
+BEGIN
+	SELECT * FROM tbl_Produto WHERE  id_Produto = _idProduto;
+END $$
+call pcd_Select_ProdutoPorCod(4);
+/*###########################################   PROCEDURE CONSULTA LISTA PRODUTO   ###################################################################*/
 DROP PROCEDURE IF EXISTS sp_BuscarProduto;
 DELIMITER $$   
 CREATE PROCEDURE sp_BuscarProduto( )
@@ -293,13 +320,53 @@ END $$
 
 CALL sp_BuscarProduto();
 
-/*###########################################   PROCEDURE PESQUISA PRODUTO POR CÓDIGO   ##############################################################*/
-DROP PROCEDURE IF EXISTS pcd_Select_ProdutoPorCod;
-DELIMITER $$   
-CREATE PROCEDURE pcd_Select_ProdutoPorCod( _idProduto int )
-BEGIN
-	SELECT * FROM tbl_produto WHERE  id_Produto = _idProduto;
-END $$
-call pcd_Select_ProdutoPorCod(3);
+/*###########################################   PROCEDURE ALTERAR PRODUTO   ##############################################################*/
+drop procedure if exists sp_AltProduto;
+delimiter $$
+create procedure sp_AltProduto(
+in _idCategoria int,
+in _nmProduto varchar(40),
+in _dsProduto varchar(150),
+in _vlProduto decimal(10,2),
+in _stProduto bit(1),
+in _urlProduto varchar(254),
+in _idProduto int
+)
+begin 
 
-/*###########################################   PROCEDURE PESQUISA PRODUTO POR CÓDIGO   ##############################################################*/
+update tbl_Produto
+set id_Categoria = _idCategoria, nm_Produto = _nmProduto, ds_Produto = _dsProduto, vl_Produto = _vlProduto, 
+st_Produto = _stProduto, url_Produto = urlProduto where id_Produto = p_idProduto;
+
+end $$
+delimiter ;
+
+/*###########################################   PROCEDURE DELETAR PRODUTO   ##############################################################*/
+DROP PROCEDURE IF EXISTS pcd_Deletar_Produto;
+DELIMITER $$
+CREATE  PROCEDURE pcd_Deletar_Produto( _idProduto int)
+BEGIN
+   DELETE FROM tbl_Produto WHERE id_Produto = _idProduto;
+END $$
+
+CALL pcd_Deletar_Produto(3);
+
+/*###########################################   TABELA CATEGORIA  ##############################################################*/
+/*###########################################   PROCEDURE INSERT CATEGORIA   ##############################################################*/
+DROP PROCEDURE if exists pcd_insertCategoria;
+DELIMITER $$   
+CREATE PROCEDURE pcd_insertCategoria(              
+_nmCategoria varchar(30),
+_dsCategoria varchar(100)
+)
+	BEGIN
+		START TRANSACTION;  
+			INSERT INTO tbl_Categoria(nm_Categoria, ds_Categoria)
+			VALUES(_nmCategoria, _dsCategoria);    
+	COMMIT;
+		ROLLBACK;
+END $$
+    CALL pcd_insertCategoria("Retrô","O estilo retro traz um pouco de romantismo ao design, causado pelo próprio sentimento das pessoas que tendem a sentir que a vida era muito mais simples, menos estressante e relaxada na época da escola ou faculdade. Este é, provavelmente, o lugar onde o design retro nos leva: a nostalgia.");
+    CALL pcd_insertCategoria("Gamer","O estilo gamer é bem colorido e cheio de referências. São inúmeras inspirações para a decoração: papéis de parede e roupas de cama temáticas, almofadas personalizadas, coleções de miniaturas dos personagens, iluminação diferenciada, e até mesmo métodos artesanais. É possível, inclusive, unir referências de jogos diferentes. ");
+    CALL pcd_insertCategoria("Vintage","O estilo vintage, caracterizado pelo resgate de peças de mobiliário originais que não sofreram modificações e modernizações. Esse tipo de decoração é perfeito para quem gosta de delicadeza, tons sóbrios e aquele toque “antiguinho”. A especialista afirma que móveis, lustres e produtos das décadas de 50, 60, 70 podem ser contrastados com ambientes modernos, clean, arrojados, e compor espaços únicos, cheios de charme e história.");
+    CALL pcd_insertCategoria("Rock","O estilo rock na decoração é utilizado da mesma forma que na moda, sempre aplicado para demonstrar atitude, personalidade forte e a grande preferência por este ritmo da música. Quem sonha em montar cômodos repletos de referências ao estilo rock rock’n’roll precisa apenas investir em acessórios certos, peças-chave e ter disposição para garimpar bons e excelentes itens que reflitam um pouco desse movimento.");
