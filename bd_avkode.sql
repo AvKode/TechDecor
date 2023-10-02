@@ -189,6 +189,41 @@ END $$
     CALL pcd_insertcliente("Victor Massao","massao@gmail.com", 10945128912, "10/05/2003", "Rua Cristovão Colombo", 783, "Casa", 09986673, "(11)2345-1196");
     CALL pcd_insertcliente("Kayky da Silva","Kayky@gmail.com", 12349028912, "10/10/2006", "Avenida João Bosco", 783, "Apto 65", 09984563, "(11)9876-1196");
   
+  
+ -- ##########################################   PROCEDURE INSERT CLIENTE/USUÁRIO   ###################################################################
+ 
+drop procedure if exists sp_InserirCliUsu;
+delimiter //
+create procedure sp_InserirCliUsu(
+	in _nomeUsu varchar(80),
+    in _senhaUsu char(8),
+    in _nomeCli varchar(80),
+    in _emailCli varchar(80),
+    in _cpfCli char(11),
+    in _nascCli varchar(10),
+    in _nmlogCli varchar(80),
+    in _nologCLi char(5),
+    in _complementoCli varchar(20),
+    in _cepCli char(8),
+    in _foneCli varchar(13)
+)
+begin
+	declare vid int; -- criando variavel para receber id do cliente
+    
+     insert into tbl_Usuario
+    (nome_Usu, senha_Usu, tipo_Usu)values(_nomeUsu,_senhaUsu, "C");
+    
+        set vid = last_insert_id();
+    
+    insert into tbl_Cliente
+    (nome_Cliente,email_CLi, cpf_Cli, nasc_Cli, nm_log_Cli, no_log_Cli, complemento_Cli, cep_Cli, fone_Cli, id_Usu)
+    values(_nomeCli, _emailCli, _cpfCli, _nascCli, _nmlogCli, _nologCli, _complementoCli, _cepCli, _foneCli, vid);
+    
+end //
+delimiter ;
+
+CALL 
+
   /*##################################   PROCEDURE CONSULTAR CLIENTE POR CODIGO   ##################################################################*/   
 DROP PROCEDURE IF EXISTS pcd_Select_ClientePorCod;
 DELIMITER $$   
