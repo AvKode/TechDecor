@@ -55,17 +55,11 @@ namespace PAKTD.Controllers
         [HttpPost]
         public ActionResult Cadastrar(mCliente cl, mUsuario us)
         {
-            try
-            {
+
                 aCliUsu.InserirCliUsu(cl, us);
                 Session["usuLog"] = us.NomeUsu.ToString();
                 return RedirectToAction("Index", "Home");
-            }
-            catch (Exception erro)
-            {
-                msg = "Ocorreu um erro ao Inserir!" + erro.Message;
-                return View();
-            }
+
         }
     }
 }

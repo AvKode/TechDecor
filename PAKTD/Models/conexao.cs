@@ -8,7 +8,7 @@ namespace PAKTD.Models
 {
     public class conexao
     {
-        MySqlConnection cn = new MySqlConnection("Server=localhost; Database=bdLivrariaKaCr; User=root;pwd=12345678");
+        MySqlConnection cn = new MySqlConnection("Server=localhost;port=3306; DataBase=bd_avkode; user id=root; password=141184");
         public static string msg;
         public MySqlConnection MyConectarBD()
         {

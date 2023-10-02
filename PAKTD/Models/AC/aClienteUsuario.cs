@@ -19,7 +19,7 @@ namespace PAKTD.Models.AC
 
         public void InserirCliUsu(mCliente cl, mUsuario us)
         {
-            MySqlCommand cmd = new MySqlCommand("call pcd_insertUsuarioCliente(@nmUsu, @seUsu, @nmCli, @dtCli, @emCli, @foCli, @cpfCli, @cepCli, @noCasa, @coCasa)", con.MyConectarBD()); 
+            MySqlCommand cmd = new MySqlCommand("call sp_InserirCliUsu(@nmUsu, @seUsu, @nmCli, @emCli, @cpfCli, @dtCli, @noCasa, @coCasa, @cepCli, @foCli )", con.MyConectarBD()); 
             cmd.Parameters.Add("@nmUsu", MySqlDbType.VarChar).Value = us.NomeUsu;
             cmd.Parameters.Add("@seUsu", MySqlDbType.VarChar).Value = us.SenhaUsu;
             cmd.Parameters.Add("@nmCli", MySqlDbType.VarChar).Value = cl.NmCli;

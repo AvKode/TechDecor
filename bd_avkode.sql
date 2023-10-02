@@ -11,7 +11,6 @@ nome_Cli varchar(80) not null,
 email_Cli varchar(80) not null,
 cpf_Cli char(11) not null,
 nasc_Cli varchar(10) not null,
-nm_log_Cli varchar(80),
 no_log_Cli char(5),
 complemento_Cli varchar(60),
 cep_Cli char(8),
@@ -21,7 +20,10 @@ constraint foreign key(id_Usu) references tbl_Usuario(id_Usu)
 )
 default charset utf8;
 alter table tbl_Cliente
-modify column nasc_Cli varchar(10) not null;
+drop column nm_log_Cli;
+
+alter table tbl_Cliente
+modify column nasc_Cli date;
 
 create table tbl_Usuario
 (
@@ -157,7 +159,7 @@ BEGIN
    DELETE FROM tbl_usuario WHERE id_Usu = _idUsu;
 END $$
 
-CALL pcd_Deletar_Usuario(2);
+CALL pcd_Deletar_Usuario();
     
 -- ##########################################   TABELA CLIENTE   ##################################################################################
 -- ##########################################   PROCEDURE INSERT CLIENTE   ########################################################################
@@ -200,8 +202,7 @@ create procedure sp_InserirCliUsu(
     in _nomeCli varchar(80),
     in _emailCli varchar(80),
     in _cpfCli char(11),
-    in _nascCli varchar(10),
-    in _nmlogCli varchar(80),
+    in _nascCli date,
     in _nologCLi char(5),
     in _complementoCli varchar(20),
     in _cepCli char(8),
@@ -216,13 +217,11 @@ begin
         set vid = last_insert_id();
     
     insert into tbl_Cliente
-    (nome_Cliente,email_CLi, cpf_Cli, nasc_Cli, nm_log_Cli, no_log_Cli, complemento_Cli, cep_Cli, fone_Cli, id_Usu)
-    values(_nomeCli, _emailCli, _cpfCli, _nascCli, _nmlogCli, _nologCli, _complementoCli, _cepCli, _foneCli, vid);
+    (nome_Cliente,email_CLi, cpf_Cli, nasc_Cli, no_log_Cli, complemento_Cli, cep_Cli, fone_Cli, id_Usu)
+    values(_nomeCli, _emailCli, _cpfCli, str_to_date('_nascCli', '%Y %M %d'), _nologCli, _complementoCli, _cepCli, _foneCli, vid);
     
 end //
 delimiter ;
-
-CALL 
 
   /*##################################   PROCEDURE CONSULTAR CLIENTE POR CODIGO   ##################################################################*/   
 DROP PROCEDURE IF EXISTS pcd_Select_ClientePorCod;
@@ -279,7 +278,8 @@ BEGIN
    DELETE FROM tbl_cliente WHERE id_Cliente = _idCli;
 END $$
 
-CALL PCD_DELETAR_CLIENTE(3);
+CALL PCD_DELETAR_CLIENTE(10);
+call pcd_Select_Cliente();
 
 -- ##########################################   TABELA PAGAMENTO   ##################################################################################
 -- ##########################################   PROCEDURE PARA RECEBER FORMA DE PAGAMENTO   #########################################################

@@ -34,7 +34,7 @@ namespace PAKTD.Models.MO
         //----------------------------------//
 
         [DisplayName("Confirmar Senha")]
-        [Compare("senhaUsu", ErrorMessage = "As senhas não são iguais!")]
+        [Compare("SenhaUsu", ErrorMessage = "As senhas não são iguais!")]
         public string ConfsenhaUsu { get; set; }
     }
 }
