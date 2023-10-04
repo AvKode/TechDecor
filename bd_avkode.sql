@@ -507,7 +507,7 @@ CREATE PROCEDURE pcd_Select_CategoriaPorCod( _idCategoria int )
 BEGIN
 	SELECT * FROM tbl_Categoria WHERE  id_Categoria = _idCategoria;
 END $$
-call pcd_Select_CategoriaPorCod(4);
+call pcd_Select_CategoriaPorCod();
 
 /*##################################   PROCEDURE CONSULTAR CATEGORIA POR NOME   ##################################################################*/   
 DROP PROCEDURE IF EXISTS pcd_Select_CategoriaPorNome;
@@ -560,5 +560,5 @@ BEGIN
    DELETE FROM tbl_Categoria WHERE id_Categoria = _idCategoria;
 END $$
 
-CALL pcd_Deletar_Categoria(3);
+CALL pcd_Deletar_Categoria();
 
