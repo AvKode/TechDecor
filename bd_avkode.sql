@@ -43,6 +43,8 @@ ds_Categoria varchar(100) not null
 )
 default charset utf8;
 
+alter table tbl_Categoria
+modify column ds_Categoria varchar(500);
 
 create table tbl_Produto
 (
@@ -484,7 +486,7 @@ DROP PROCEDURE if exists pcd_insertCategoria;
 DELIMITER $$   
 CREATE PROCEDURE pcd_insertCategoria(              
 _nmCategoria varchar(30),
-_dsCategoria varchar(100)
+_dsCategoria varchar(500)
 )
 	BEGIN
 		START TRANSACTION;  
@@ -497,3 +499,66 @@ END $$
     CALL pcd_insertCategoria("Gamer","O estilo gamer é bem colorido e cheio de referências. São inúmeras inspirações para a decoração: papéis de parede e roupas de cama temáticas, almofadas personalizadas, coleções de miniaturas dos personagens, iluminação diferenciada, e até mesmo métodos artesanais. É possível, inclusive, unir referências de jogos diferentes. ");
     CALL pcd_insertCategoria("Vintage","O estilo vintage, caracterizado pelo resgate de peças de mobiliário originais que não sofreram modificações e modernizações. Esse tipo de decoração é perfeito para quem gosta de delicadeza, tons sóbrios e aquele toque “antiguinho”. A especialista afirma que móveis, lustres e produtos das décadas de 50, 60, 70 podem ser contrastados com ambientes modernos, clean, arrojados, e compor espaços únicos, cheios de charme e história.");
     CALL pcd_insertCategoria("Rock","O estilo rock na decoração é utilizado da mesma forma que na moda, sempre aplicado para demonstrar atitude, personalidade forte e a grande preferência por este ritmo da música. Quem sonha em montar cômodos repletos de referências ao estilo rock rock’n’roll precisa apenas investir em acessórios certos, peças-chave e ter disposição para garimpar bons e excelentes itens que reflitam um pouco desse movimento.");
+    
+    /*###########################################   PROCEDURE PESQUISA CATEGORIA POR CÓDIGO  #########################################################*/
+DROP PROCEDURE IF EXISTS pcd_Select_CategoriaPorCod;
+DELIMITER $$   
+CREATE PROCEDURE pcd_Select_CategoriaPorCod( _idCategoria int )
+BEGIN
+	SELECT * FROM tbl_Categoria WHERE  id_Categoria = _idCategoria;
+END $$
+call pcd_Select_CategoriaPorCod(4);
+
+/*##################################   PROCEDURE CONSULTAR CATEGORIA POR NOME   ##################################################################*/   
+DROP PROCEDURE IF EXISTS pcd_Select_CategoriaPorNome;
+DELIMITER $$
+CREATE PROCEDURE pcd_Select_CategoriaPorNome(
+    IN _nmCategoria VARCHAR(30)
+)
+BEGIN
+    SELECT *
+    FROM tbl_Categoria
+    WHERE nm_Categoria LIKE _nmCategoria;
+
+END $$
+DELIMITER ;
+
+CALL pcd_Select_CategoriaPorNome("Retrô");
+/*###########################################   PROCEDURE CONSULTA LISTAR CATEGORIA   ###################################################################*/
+DROP PROCEDURE IF EXISTS sp_ListarCategoria;
+DELIMITER $$   
+CREATE PROCEDURE sp_ListarCategoria( )
+BEGIN
+	SELECT * FROM tbl_Categoria;
+END $$
+
+CALL sp_ListarCategoria();
+
+/*###########################################   PROCEDURE ALTERAR CATEGORIA   ##############################################################*/
+drop procedure if exists sp_AltCategoria;
+delimiter $$
+create procedure sp_AltCategoria(
+in _nmCategoria varchar(30),
+in _dsCategoria varchar(500),
+in _idCategoria int
+)
+begin 
+
+update tbl_Categoria
+set nm_Categoria = _nmCategoria, ds_Categoria = _dsCategoria where id_Categoria = _idCategoria;
+
+end $$
+delimiter ;
+
+CALL sp_AltCategoria ();
+
+/*###########################################   PROCEDURE DELETAR CATEGORIA   ##############################################################*/
+DROP PROCEDURE IF EXISTS pcd_Deletar_Categoria;
+DELIMITER $$
+CREATE  PROCEDURE pcd_Deletar_Categoria( _idCategoria int)
+BEGIN
+   DELETE FROM tbl_Categoria WHERE id_Categoria = _idCategoria;
+END $$
+
+CALL pcd_Deletar_Categoria(3);
+
