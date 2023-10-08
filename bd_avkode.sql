@@ -1,8 +1,14 @@
 create database bd_avkode
 default character set utf8
 default collate utf8_general_ci;
+drop database bd_avkode;
 
 use bd_avkode;
+
+drop table tbl_Cliente;
+
+select * from tbl_Cliente;
+select * from tbl_Usuario;
 
 create table tbl_Cliente
 (
@@ -10,7 +16,7 @@ id_Cliente int primary key auto_increment,
 nome_Cli varchar(80) not null,
 email_Cli varchar(80) not null,
 cpf_Cli char(11) not null,
-nasc_Cli varchar(10) not null,
+nasc_Cli date not null,
 no_log_Cli char(5),
 complemento_Cli varchar(60),
 cep_Cli char(8),
@@ -35,6 +41,8 @@ tipo_Usu char(1) not null
 default charset utf8;
 select * from tbl_Usuario;
 
+insert into tbl_usuario values (default, 'admin', '12345678', 'A');
+
 create table tbl_Categoria
 (
 id_Categoria int primary key auto_increment,
@@ -43,8 +51,6 @@ ds_Categoria varchar(100) not null
 )
 default charset utf8;
 
-alter table tbl_Categoria
-modify column ds_Categoria varchar(500);
 
 create table tbl_Produto
 (
@@ -111,8 +117,7 @@ _tipoUsu char(1)
 		ROLLBACK;
 END $$
     CALL pcd_insertUsuario("Carlão",12345678, "A");
-    CALL pcd_insertUsuario("Victor",87654321, "C");
-    CALL pcd_insertUsuario("Matheus",87654311, "A");
+    CALL pcd_insertUsuario("Victor",87654321, "B");
     
       /*##################################   PROCEDURE CONSULTAR USUÁRIO POR CODIGO   ##################################################################*/   
 DROP PROCEDURE IF EXISTS pcd_Select_UsuarioPorCod;
@@ -123,37 +128,7 @@ BEGIN
 END $$
 call pcd_Select_UsuarioPorCod(2);
 
-/*##################################   PROCEDURE CONSULTAR USUÁRIO POR NOME   ##################################################################*/   
-DROP PROCEDURE IF EXISTS pcd_Select_UsuarioPorNome;
-DELIMITER $$
-CREATE PROCEDURE pcd_Select_UsuarioPorNome(
-    IN _nomeUsu VARCHAR(80)
-)
-BEGIN
-    SELECT *
-    FROM tbl_usuario
-    WHERE nome_Usu LIKE _nomeUsu;
 
-END $$
-DELIMITER ;
-
-CALL pcd_Select_UsuarioPorNome("Carlão");
-
-/*##################################   PROCEDURE CONSULTAR USUÁRIO POR TIPO   ##################################################################*/   
-DROP PROCEDURE IF EXISTS pcd_Select_UsuarioPorTipo;
-DELIMITER $$
-CREATE PROCEDURE pcd_Select_UsuarioPorTipo(
-    IN _tipoUsu CHAR(1)
-)
-BEGIN
-    SELECT *
-    FROM tbl_usuario
-    WHERE tipo_Usu LIKE _tipoUsu;
-
-END $$
-DELIMITER ;
-
-CALL pcd_Select_UsuarioPorTipo("A");
 /*#####################################    PROCEDURE CONSULTAR USUÁRIO   ###########################################################################*/
 DROP PROCEDURE IF EXISTS pcd_Select_Usuario;
 DELIMITER $$   
@@ -192,7 +167,7 @@ BEGIN
    DELETE FROM tbl_usuario WHERE id_Usu = _idUsu;
 END $$
 
-CALL pcd_Deletar_Usuario(2);
+CALL pcd_Deletar_Usuario();
     
 -- ##########################################   TABELA CLIENTE   ##################################################################################
 -- ##########################################   PROCEDURE INSERT CLIENTE   ########################################################################
@@ -202,7 +177,8 @@ CREATE PROCEDURE pcd_insertcliente(
 _nome_Cli varchar(80),
 _email_Cli varchar(80),
 _cpf_Cli char(11),
-_nasc_Cli date,
+_nasc_Cli varchar(10),
+_nm_log_Cli varchar(80),
 _no_log_Cli char(5),
 _complemento_Cli varchar(60),
 _cep_Cli char(8),
@@ -211,18 +187,19 @@ _id_Usu int
 )
 	BEGIN
 		START TRANSACTION;  
-			INSERT INTO tbl_cliente(nome_Cli, email_Cli, cpf_Cli, nasc_Cli, no_log_Cli, complemento_Cli, cep_Cli, fone_Cli, id_Usu)
-			VALUES(_nome_Cli, _email_Cli, _cpf_Cli, _nasc_Cli, _no_log_Cli, _complemento_Cli, _cep_Cli, _fone_Cli, _id_Usu);    
+			INSERT INTO tbl_cliente(nome_Cli, email_Cli, cpf_Cli, nasc_Cli, nm_log_Cli, no_log_Cli, complemento_Cli, cep_Cli, fone_Cli, id_Usu)
+			VALUES(_nome_Cli, _email_Cli, _cpf_Cli, _nasc_Cli, _nm_log_Cli, _no_log_Cli, _complemento_Cli, _cep_Cli, _fone_Cli, _id_Usu);    
 	COMMIT;
 		ROLLBACK;
 END $$
-    CALL pcd_insertcliente("Nilson","nilson@gmail.com", 12345678912, "2010/10/10", 123, "Apto 56", 09876543, "(11)2532-1196", 1);
-    CALL pcd_insertcliente("Carlos Eduardo","carloseduardo@gmail.com", 12345678911, "2010/10/10", 383, "Apto 73", 09876542, "(11)2532-1186", 3);
-    CALL pcd_insertcliente("Eduardo Pereira","eduardopereira@gmail.com", 12345656912, "2010/10/10", 110, "Casa", 09876783, "(11)3432-1196", 1);
-    CALL pcd_insertcliente("Matheus Nascimento","matheus@gmail.com", 12345128912, "2010/10/10", 983, "Apto 45", 09986543, "(11)5432-1196", 1);
-    CALL pcd_insertcliente("Victor Massao","massao@gmail.com", 10945128912, "2010/10/10", 783, "Casa", 09986673, "(11)2345-1196", 1);
-    CALL pcd_insertcliente("Kayky da Silva","Kayky@gmail.com", 12349028912, "2010/10/10", 783, "Apto 65", 09984563, "(11)9876-1196", 1);
+    CALL pcd_insertcliente("Nilson","nilson@gmail.com", 12345678912, "10/10/2010", "Rua Nova York", 123, "Apto 56", 09876543, "(11)2532-1196", 2);
+    CALL pcd_insertcliente("Carlos Eduardo","carloseduardo@gmail.com", 12345678911, "10/10/1990", "Rua Jaguaré", 383, "Apto 73", 09876542, "(11)2532-1186");
+    CALL pcd_insertcliente("Eduardo Pereira","eduardopereira@gmail.com", 12345656912, "10/09/2005", "Rua Princesa Isabel", 110, "Casa", 09876783, "(11)3432-1196");
+    CALL pcd_insertcliente("Matheus Nascimento","matheus@gmail.com", 12345128912, "10/10/2004", "Rua Gil Eanes", 983, "Apto 45", 09986543, "(11)5432-1196");
+    CALL pcd_insertcliente("Victor Massao","massao@gmail.com", 10945128912, "10/05/2003", "Rua Cristovão Colombo", 783, "Casa", 09986673, "(11)2345-1196");
+    CALL pcd_insertcliente("Kayky da Silva","Kayky@gmail.com", 12349028912, "10/10/2006", "Avenida João Bosco", 783, "Apto 65", 09984563, "(11)9876-1196");
   
+  insert 
   
  -- ##########################################   PROCEDURE INSERT CLIENTE/USUÁRIO   ###################################################################
  
@@ -234,7 +211,7 @@ create procedure sp_InserirCliUsu(
     in _nomeCli varchar(80),
     in _emailCli varchar(80),
     in _cpfCli char(11),
-    in _nascCli date,
+    in _nascCli datetime,
     in _nologCLi char(5),
     in _complementoCli varchar(20),
     in _cepCli char(8),
@@ -244,7 +221,7 @@ begin
 	declare vid int; -- criando variavel para receber id do cliente
     
      insert into tbl_Usuario
-    (nome_Usu, senha_Usu, tipo_Usu)values(_nomeUsu,_senhaUsu, "A");
+    (nome_Usu, senha_Usu, tipo_Usu)values(_nomeUsu,_senhaUsu, "C");
     
         set vid = last_insert_id();
     
@@ -255,8 +232,6 @@ begin
 end //
 delimiter ;
 
-CALL sp_InserirCliUsu("Santos",45454545 , "Silva", "silva@gmail.com", 33322233344, "2005/02/03", "450", "Apto21", 05545100, "(11)1234-5678"); 
-
   /*##################################   PROCEDURE CONSULTAR CLIENTE POR CODIGO   ##################################################################*/   
 DROP PROCEDURE IF EXISTS pcd_Select_ClientePorCod;
 DELIMITER $$   
@@ -264,25 +239,9 @@ CREATE PROCEDURE pcd_Select_ClientePorCod( _idCli int )
 BEGIN
 	SELECT * FROM tbl_cliente WHERE  id_Cliente = _idCli;
 END $$
-call pcd_Select_ClientePorCod();
+call pcd_Select_ClientePorCod(4);
 
- /*##################################   PROCEDURE CONSULTAR CLIENTE POR NOME   ##################################################################*/   
-DROP PROCEDURE IF EXISTS pcd_Select_ClientePorNome;
-DELIMITER $$
-CREATE PROCEDURE pcd_Select_ClientePorNome(
-    IN _nomeCli VARCHAR(80)
-)
-BEGIN
-    SELECT *
-    FROM tbl_Cliente
-    WHERE nome_Cli LIKE _nomeCli;
-
-END $$
-DELIMITER ;
-
-CALL pcd_Select_ClientePorNome("Carlos Eduardo");
-
-/*#####################################    PROCEDURE CONSULTAR LISTA CLIENTES   ###########################################################################*/
+/*#####################################    PROCEDURE CONSULTAR CLIENTES   ###########################################################################*/
 DROP PROCEDURE IF EXISTS pcd_Select_Cliente;
 DELIMITER $$   
 CREATE PROCEDURE pcd_Select_Cliente( )
@@ -290,6 +249,15 @@ BEGIN
 	SELECT * FROM tbl_cliente;
 END $$
 call pcd_Select_Cliente();
+
+/*#####################################    PROCEDURE CONSULTAR CLIENTES   ###########################################################################*/
+DROP PROCEDURE IF EXISTS pcd_Logar;
+DELIMITER $$   
+CREATE PROCEDURE pcd_Logar( 
+	in p_usu varchar(80),
+    in p_sen char(8))
+	SELECT * FROM tbl_usuario where nome_Usu = p_usu and senha_Usu = p_sen;
+call pcd_Logar('Kallex', '123456');
   
 -- ##########################################   PROCEDURE ATUALIZAR CLIENTE   #####################################################################
 drop PROCEDURE if exists sp_UpdateCliente;
@@ -386,35 +354,6 @@ END $$
 
 CALL(1, "", "", , , "");
 
- -- ##########################################   PROCEDURE INSERT PRODUTO/CATEGORIA   ###################################################################
- 
-drop procedure if exists sp_InserirProCat;
-delimiter //
-create procedure sp_InserirProCat(
-    in _idCategoria int,
-    in _nmProduto varchar(40),
-    in _dsProduto varchar(150),
-    in _vlProduto decimal(10,2),
-    in _stProduto bit,
-    in _urlProduto varchar(254)
-)
-begin
-	declare vid int; -- criando variavel para receber id da Categoria
-    insert into tbl_Categoria
-    
-    (id_Categoria) values (_idCategoria);
-    
-        set vid = last_insert_id();
-    
-    insert into tbl_produto
-    (id_Categoria, nm_Produto, ds_Produto, vl_Produto, st_Produto, url_Produto)
-    values(_idCategoria, _nmProduto, _dsProduto, _vlProduto, _stProduto, _urlProduto);
-    
-end //
-delimiter ;
-
-CALL sp_InserirProCat(1, "Quarto", "Legal", "10.200", 1, "url");
-
 /*###########################################   PROCEDURE PESQUISA PELO PRODUTO POR CÓDIGO  #########################################################*/
 DROP PROCEDURE IF EXISTS pcd_Select_ProdutoPorCod;
 DELIMITER $$   
@@ -423,22 +362,6 @@ BEGIN
 	SELECT * FROM tbl_Produto WHERE  id_Produto = _idProduto;
 END $$
 call pcd_Select_ProdutoPorCod(4);
-
-/*##################################   PROCEDURE CONSULTAR PRODUTO POR NOME   ##################################################################*/   
-DROP PROCEDURE IF EXISTS pcd_Select_ProdutoPorNome;
-DELIMITER $$
-CREATE PROCEDURE pcd_Select_ProdutoPorNome(
-    IN _nmProduto VARCHAR(40)
-)
-BEGIN
-    SELECT *
-    FROM tbl_produto
-    WHERE nm_Produto LIKE _nmProduto;
-
-END $$
-DELIMITER ;
-
-CALL pcd_Select_ProdutoPorNome("");
 /*###########################################   PROCEDURE CONSULTA LISTA PRODUTO   ###################################################################*/
 DROP PROCEDURE IF EXISTS sp_BuscarProduto;
 DELIMITER $$   
@@ -486,7 +409,7 @@ DROP PROCEDURE if exists pcd_insertCategoria;
 DELIMITER $$   
 CREATE PROCEDURE pcd_insertCategoria(              
 _nmCategoria varchar(30),
-_dsCategoria varchar(500)
+_dsCategoria varchar(100)
 )
 	BEGIN
 		START TRANSACTION;  
@@ -499,66 +422,3 @@ END $$
     CALL pcd_insertCategoria("Gamer","O estilo gamer é bem colorido e cheio de referências. São inúmeras inspirações para a decoração: papéis de parede e roupas de cama temáticas, almofadas personalizadas, coleções de miniaturas dos personagens, iluminação diferenciada, e até mesmo métodos artesanais. É possível, inclusive, unir referências de jogos diferentes. ");
     CALL pcd_insertCategoria("Vintage","O estilo vintage, caracterizado pelo resgate de peças de mobiliário originais que não sofreram modificações e modernizações. Esse tipo de decoração é perfeito para quem gosta de delicadeza, tons sóbrios e aquele toque “antiguinho”. A especialista afirma que móveis, lustres e produtos das décadas de 50, 60, 70 podem ser contrastados com ambientes modernos, clean, arrojados, e compor espaços únicos, cheios de charme e história.");
     CALL pcd_insertCategoria("Rock","O estilo rock na decoração é utilizado da mesma forma que na moda, sempre aplicado para demonstrar atitude, personalidade forte e a grande preferência por este ritmo da música. Quem sonha em montar cômodos repletos de referências ao estilo rock rock’n’roll precisa apenas investir em acessórios certos, peças-chave e ter disposição para garimpar bons e excelentes itens que reflitam um pouco desse movimento.");
-    
-    /*###########################################   PROCEDURE PESQUISA CATEGORIA POR CÓDIGO  #########################################################*/
-DROP PROCEDURE IF EXISTS pcd_Select_CategoriaPorCod;
-DELIMITER $$   
-CREATE PROCEDURE pcd_Select_CategoriaPorCod( _idCategoria int )
-BEGIN
-	SELECT * FROM tbl_Categoria WHERE  id_Categoria = _idCategoria;
-END $$
-call pcd_Select_CategoriaPorCod();
-
-/*##################################   PROCEDURE CONSULTAR CATEGORIA POR NOME   ##################################################################*/   
-DROP PROCEDURE IF EXISTS pcd_Select_CategoriaPorNome;
-DELIMITER $$
-CREATE PROCEDURE pcd_Select_CategoriaPorNome(
-    IN _nmCategoria VARCHAR(30)
-)
-BEGIN
-    SELECT *
-    FROM tbl_Categoria
-    WHERE nm_Categoria LIKE _nmCategoria;
-
-END $$
-DELIMITER ;
-
-CALL pcd_Select_CategoriaPorNome("Retrô");
-/*###########################################   PROCEDURE CONSULTA LISTAR CATEGORIA   ###################################################################*/
-DROP PROCEDURE IF EXISTS sp_ListarCategoria;
-DELIMITER $$   
-CREATE PROCEDURE sp_ListarCategoria( )
-BEGIN
-	SELECT * FROM tbl_Categoria;
-END $$
-
-CALL sp_ListarCategoria();
-
-/*###########################################   PROCEDURE ALTERAR CATEGORIA   ##############################################################*/
-drop procedure if exists sp_AltCategoria;
-delimiter $$
-create procedure sp_AltCategoria(
-in _nmCategoria varchar(30),
-in _dsCategoria varchar(500),
-in _idCategoria int
-)
-begin 
-
-update tbl_Categoria
-set nm_Categoria = _nmCategoria, ds_Categoria = _dsCategoria where id_Categoria = _idCategoria;
-
-end $$
-delimiter ;
-
-CALL sp_AltCategoria ();
-
-/*###########################################   PROCEDURE DELETAR CATEGORIA   ##############################################################*/
-DROP PROCEDURE IF EXISTS pcd_Deletar_Categoria;
-DELIMITER $$
-CREATE  PROCEDURE pcd_Deletar_Categoria( _idCategoria int)
-BEGIN
-   DELETE FROM tbl_Categoria WHERE id_Categoria = _idCategoria;
-END $$
-
-CALL pcd_Deletar_Categoria();
-

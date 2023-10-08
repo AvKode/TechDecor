@@ -21,24 +21,23 @@ namespace PAKTD.Controllers
         [HttpPost]
         public ActionResult Logar(mUsuario us)
         {
-            aCliUsu.LogarCliUsu(us);
-            if (us.NomeUsu != null && us.SenhaUsu != null)
+            if (aCliUsu.LogarCliUsu(us) == true)
             {
                 Session["usuLog"] = us.NomeUsu.ToString();
                 Session["senLog"] = us.SenhaUsu.ToString();
                 if (us.TipoUsu == "A")
                 {
-                    Session["tA"] = us.TipoUsu.ToString();
-                    return RedirectToAction("Index", "Admin");
+                    Session["tU"] = "Administrador";
+                    return RedirectToAction("Index", "Home");
                 }
                 else if (us.TipoUsu == "F")
                 {
-                    Session["tA"] = us.TipoUsu.ToString();
+                    Session["tU"] = "Funcionário";
                     return RedirectToAction("Index", "Admin");
                 }
                 else
                 {
-                    Session["tC"] = us.TipoUsu.ToString();
+                    Session["tU"] = "Cliente";
                     return RedirectToAction("Index", "Home");
                 }
             }
