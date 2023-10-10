@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PAKTD.Models.MO.mCategoria>
+
+@{
+    ViewBag.Title = "ListarCategoria";
+    Layout = "~/Views/Dashboard/_Layout.cshtml";
+}
+
+<h2 class="text-center">CATEGORIAS CADASTRADAS</h2>
+<table id="catTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr class="bg-success">
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+
+            foreach (var categoria in Model)
+            {
+                <tr>
+
+                    <td>@categoria.IdCate</td>
+                    <td>@categoria.NmCate</td>
+                    <td>@categoria.dsCate</td>
+
+                </tr>
+            };
+        }
+        else
+        {
+
+            <tr>
+                <td class="text-center" colspan="5">Nenhuma categoria cadastrado.</td>
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>
+<script>
+
+                    $(document).ready(function () {
+                        $('#catTable').DataTable();
+                    });
+
+</script>
+
