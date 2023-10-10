@@ -1,11 +1,10 @@
 create database bd_avkode
 default character set utf8
 default collate utf8_general_ci;
-drop database bd_avkode;
 
 use bd_avkode;
 
-drop table tbl_Cliente;
+
 
 select * from tbl_Cliente;
 select * from tbl_Usuario;
@@ -29,7 +28,7 @@ alter table tbl_Cliente
 drop column nm_log_Cli;
 
 alter table tbl_Cliente
-modify column nasc_Cli date;
+add column nm_log_Cli varchar(50);
 
 create table tbl_Usuario
 (
@@ -192,7 +191,8 @@ _id_Usu int
 	COMMIT;
 		ROLLBACK;
 END $$
-    CALL pcd_insertcliente("Nilson","nilson@gmail.com", 12345678912, "10/10/2010", "Rua Nova York", 123, "Apto 56", 09876543, "(11)2532-1196", 2);
+select * from tbl_usuario
+    CALL pcd_insertcliente("Nilson","nilson@gmail.com", 12345678912, "2000/10/20", "Rua Nova York", 123, "Apto 56", 09876543, "(11)2532-1196", 2);
     CALL pcd_insertcliente("Carlos Eduardo","carloseduardo@gmail.com", 12345678911, "10/10/1990", "Rua Jaguaré", 383, "Apto 73", 09876542, "(11)2532-1186");
     CALL pcd_insertcliente("Eduardo Pereira","eduardopereira@gmail.com", 12345656912, "10/09/2005", "Rua Princesa Isabel", 110, "Casa", 09876783, "(11)3432-1196");
     CALL pcd_insertcliente("Matheus Nascimento","matheus@gmail.com", 12345128912, "10/10/2004", "Rua Gil Eanes", 983, "Apto 45", 09986543, "(11)5432-1196");
@@ -202,7 +202,7 @@ END $$
   insert 
   
  -- ##########################################   PROCEDURE INSERT CLIENTE/USUÁRIO   ###################################################################
- 
+ call pcd_Select_Cliente
 drop procedure if exists sp_InserirCliUsu;
 delimiter //
 create procedure sp_InserirCliUsu(
@@ -369,7 +369,7 @@ CREATE PROCEDURE sp_BuscarProduto( )
 BEGIN
 	SELECT * FROM tbl_produto;
 END $$
-
+select * from tbl_C
 CALL sp_BuscarProduto();
 
 /*###########################################   PROCEDURE ALTERAR PRODUTO   ##############################################################*/
@@ -404,6 +404,16 @@ END $$
 CALL pcd_Deletar_Produto(3);
 
 /*###########################################   TABELA CATEGORIA  ##############################################################*/
+/*###########################################   PROCEDURE SELECT CATEGORIA   ##############################################################*/
+DELIMITER $$
+CREATE PROCEDURE pcd_selectCategoria()
+
+begin
+
+select * from tbl_Categoria;
+end $$
+
+DELIMITER ;
 /*###########################################   PROCEDURE INSERT CATEGORIA   ##############################################################*/
 DROP PROCEDURE if exists pcd_insertCategoria;
 DELIMITER $$   
@@ -422,3 +432,63 @@ END $$
     CALL pcd_insertCategoria("Gamer","O estilo gamer é bem colorido e cheio de referências. São inúmeras inspirações para a decoração: papéis de parede e roupas de cama temáticas, almofadas personalizadas, coleções de miniaturas dos personagens, iluminação diferenciada, e até mesmo métodos artesanais. É possível, inclusive, unir referências de jogos diferentes. ");
     CALL pcd_insertCategoria("Vintage","O estilo vintage, caracterizado pelo resgate de peças de mobiliário originais que não sofreram modificações e modernizações. Esse tipo de decoração é perfeito para quem gosta de delicadeza, tons sóbrios e aquele toque “antiguinho”. A especialista afirma que móveis, lustres e produtos das décadas de 50, 60, 70 podem ser contrastados com ambientes modernos, clean, arrojados, e compor espaços únicos, cheios de charme e história.");
     CALL pcd_insertCategoria("Rock","O estilo rock na decoração é utilizado da mesma forma que na moda, sempre aplicado para demonstrar atitude, personalidade forte e a grande preferência por este ritmo da música. Quem sonha em montar cômodos repletos de referências ao estilo rock rock’n’roll precisa apenas investir em acessórios certos, peças-chave e ter disposição para garimpar bons e excelentes itens que reflitam um pouco desse movimento.");
+    
+
+    /*###########################################   PROCEDURES TBL_USUARIO(FUNCIONÁRIO)   ##############################################################*/
+     /*###########################################   PROCEDURES SELECT FUNCIONÁRIO   ##############################################################*/
+    DELIMITER $$
+    
+    create procedure pcd_selectFuncionario(_tipo char(1))
+    
+    BEGIN
+    
+    select * from tbl_usuario where tipo_Usu = _tipo;
+    
+    END $$
+    
+  DELIMITER ;
+  
+       /*###########################################   PROCEDURES INSERT FUNCIONÁRIO   ##############################################################*/
+  DELIMITER $$
+
+  create procedure pcd_insertFuncionario(
+  _nome varchar(80),
+  _senha char(8),
+  _tipo char(1))
+  
+  BEGIN
+  
+  insert into tbl_usuario(nome_Usu, senha_Usu, tipo_Usu)
+  values(_nome,_senha, _tipo);
+  
+  END $$
+  
+  DELIMITER ;
+  
+  /*###########################################   TABELA PAGAMENTO  ##############################################################*/
+/*###########################################   PROCEDURE SELECT PAGAMENTO  ##############################################################*/
+
+DELIMITER $$
+
+CREATE PROCEDURE pcd_SelectPagamento()
+
+BEGIN
+
+select * from tbl_pagamento;
+
+END $$
+
+DELIMITER ; 
+/*###########################################   PROCEDURE INSERT PAGAMENTO  ##############################################################*/
+DELIMITER $$
+
+CREATE PROCEDURE pcd_InsertPagamento(_ds varchar(50))
+
+BEGIN
+
+INSERT INTO tbl_pagamento(ds_Pagamento)
+VALUES(_ds);
+
+END $$
+
+DELIMITER ; 
