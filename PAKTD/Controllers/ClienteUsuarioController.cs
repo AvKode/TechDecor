@@ -60,5 +60,12 @@ namespace PAKTD.Controllers
                 return RedirectToAction("Index", "Home");
 
         }
+
+        public ActionResult consultarCliente(mCliente cl)
+        {
+
+
+            return View(aCliUsu.BuscarCli());
+        }
     }
 }

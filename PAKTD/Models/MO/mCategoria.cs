@@ -18,6 +18,10 @@ namespace PAKTD.Models.MO
         [Required(ErrorMessage = "Verifique se preencheu corretamente!")]
         [StringLength(20, ErrorMessage = "Máximo de caracteres é 20!")]
         public string NmCate { get; set; }
+
+        [DisplayName("Descrição")]
+        [DataType(DataType.MultilineText)]
+        public string dsCate { get; set; }
     }
     
 }

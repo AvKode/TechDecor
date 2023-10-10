@@ -56,27 +56,39 @@ namespace PAKTD.Models.AC
                 return false;
             }
         }
-        public void BuscarCli(mCliente cl)
+        public List<mCliente> BuscarCli()
         {
-            mUsuario us = new mUsuario();
-            MySqlCommand cmd = new MySqlCommand("", con.MyConectarBD());
-            cmd.Parameters.Add("@idCli", MySqlDbType.VarChar).Value = cl.IdCli;
-            dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                cl.NmCli = dr[1].ToString();
-                cl.DtNascCli = DateTime.Parse(dr[2].ToString());
-                cl.EmailCli = dr[3].ToString();       
-                cl.FoneCli = dr[4].ToString();
-                cl.CpfCli = dr[5].ToString();
-                cl.CepCli = dr[6].ToString();
-                cl.NoCasa = dr[7].ToString();
-                cl.ComCasa = dr[8].ToString();
-                us.NomeUsu = dr[9].ToString();
-                us.SenhaUsu = dr[10].ToString();
-                us.TipoUsu = dr[11].ToString();
-            }
+
+            List<mCliente> cliList = new List<mCliente>();
+
+            MySqlCommand cmd = new MySqlCommand("call pcd_Select_Cliente()", con.MyConectarBD());
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
             con.MyDesConectarBD();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                cliList.Add(new mCliente
+                {
+
+                   NmCli = Convert.ToString(dr["nome_Cli"]),
+                   EmailCli = Convert.ToString(dr["email_Cli"]),
+                   FoneCli = Convert.ToString(dr["fone_Cli"]),
+                   CpfCli = Convert.ToString(dr["cpf_Cli"]),
+                   CepCli = Convert.ToString(dr["cep_Cli"])
+                }
+
+                );
+
+
+            }
+
+            return cliList;
         }
         public void AlterarCli(mCliente cl, mUsuario us)
         {

@@ -171,12 +171,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\FuncionarioController.cs" />
     <Compile Include="Controllers\ClienteUsuarioController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PagamentoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AC\aCategoria.cs" />
     <Compile Include="Models\AC\aClienteUsuario.cs" />
+    <Compile Include="Models\AC\aFuncionario.cs" />
+    <Compile Include="Models\AC\aPagamento.cs" />
     <Compile Include="Models\conexao.cs" />
     <Compile Include="Models\MO\mCategoria.cs" />
     <Compile Include="Models\MO\mCliente.cs" />
@@ -207,9 +214,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\datatables.min.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagens\logo.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -217,16 +227,39 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\dataTables.bootstrap.css" />
+    <Content Include="Scripts\dataTables.bootstrap.min.css" />
+    <Content Include="Scripts\dataTables.bootstrap4.css" />
+    <Content Include="Scripts\dataTables.bootstrap4.min.css" />
+    <Content Include="Scripts\dataTables.bootstrap5.css" />
+    <Content Include="Scripts\dataTables.bootstrap5.min.css" />
+    <Content Include="Scripts\dataTables.bulma.css" />
+    <Content Include="Scripts\dataTables.bulma.min.css" />
+    <Content Include="Scripts\dataTables.dataTables.css" />
+    <Content Include="Scripts\dataTables.dataTables.min.css" />
+    <Content Include="Scripts\dataTables.foundation.css" />
+    <Content Include="Scripts\dataTables.foundation.min.css" />
+    <Content Include="Scripts\dataTables.jqueryui.css" />
+    <Content Include="Scripts\dataTables.jqueryui.min.css" />
+    <Content Include="Scripts\datatables.min.js" />
+    <Content Include="Scripts\dataTables.semanticui.css" />
+    <Content Include="Scripts\dataTables.semanticui.min.css" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.7.0.js" />
+    <Content Include="Scripts\jquery.dataTables.css" />
+    <Content Include="Scripts\jquery.dataTables.min.css" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -243,6 +276,15 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\ClienteUsuario\Logar.cshtml" />
     <Content Include="Views\ClienteUsuario\Cadastrar.cshtml" />
+    <Content Include="Views\Dashboard\_Layout.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\ClienteUsuario\consultarCliente.cshtml" />
+    <Content Include="Views\Funcionario\cadastrarFuncionario.cshtml" />
+    <Content Include="Views\Categoria\ListarCategoria.cshtml" />
+    <Content Include="Views\Categoria\CadastrarCategoria.cshtml" />
+    <Content Include="Views\Funcionario\listarFuncionario.cshtml" />
+    <Content Include="Views\Pagamento\listarPagamento.cshtml" />
+    <Content Include="Views\Pagamento\cadastrarPagamento.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
