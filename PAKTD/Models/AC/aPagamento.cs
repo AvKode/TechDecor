@@ -16,7 +16,7 @@ namespace PAKTD.Models.AC
         {
             List<mPagamento> pagList = new List<mPagamento>();
 
-            MySqlCommand cmd = new MySqlCommand("call pcd_SelectPagamento()", con.MyConectarBD());
+            MySqlCommand cmd = new MySqlCommand("call spMostrarPgto()", con.MyConectarBD());
 
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
@@ -46,12 +46,14 @@ namespace PAKTD.Models.AC
 
         public void InserirPag(mPagamento mP)
         {
-            MySqlCommand cmd = new MySqlCommand("call pcd_InsertPagamento(@dsPagamento)", con.MyConectarBD());
+            MySqlCommand cmd = new MySqlCommand("call sp_insPagamento(@dsPagamento)", con.MyConectarBD());
             cmd.Parameters.AddWithValue("@dsPagamento", mP.DsPagamento);
       
 
             cmd.ExecuteNonQuery();
             con.MyDesConectarBD();
         }
+
+     
     }
 }

@@ -16,7 +16,7 @@ namespace PAKTD.Models.AC
         {
             List<mCategoria> catList = new List<mCategoria>();
 
-            MySqlCommand cmd = new MySqlCommand("call pcd_selectCategoria()", con.MyConectarBD());
+            MySqlCommand cmd = new MySqlCommand("call sp_ListarCategoria()", con.MyConectarBD());
 
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
@@ -51,6 +51,15 @@ namespace PAKTD.Models.AC
             cmd.Parameters.AddWithValue("@nmCat", mC.NmCate);
             cmd.Parameters.AddWithValue("@dsCat", mC.dsCate);
 
+            cmd.ExecuteNonQuery();
+            con.MyDesConectarBD();
+        }
+
+        public void DeletarCat(int id)
+        {
+            MySqlCommand cmd = new MySqlCommand("call pcd_Deletar_Categoria(@vCod)", con.MyConectarBD());
+
+            cmd.Parameters.AddWithValue("@vCod", id);
             cmd.ExecuteNonQuery();
             con.MyDesConectarBD();
         }

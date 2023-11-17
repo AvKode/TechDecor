@@ -1,0 +1,9 @@
+﻿.container {
+    display: grid;
+    justify-content: center;
+}
+.backg {
+    padding: 80px;
+    background-color: white;
+    border-radius: 20px;
+}

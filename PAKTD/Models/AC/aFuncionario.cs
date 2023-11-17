@@ -53,5 +53,66 @@ namespace PAKTD.Models.AC
             cmd.ExecuteNonQuery();
             con.MyDesConectarBD();
         }
+
+        public void DeletarFunc(int id)
+        {
+            MySqlCommand cmd = new MySqlCommand("call pcd_Deletar_Usuario(@vCod)", con.MyConectarBD());
+
+            cmd.Parameters.AddWithValue("@vCod", id);
+            cmd.ExecuteNonQuery();
+            con.MyDesConectarBD();
+        }
+
+        public void AtualizarFuncionario(mUsuario mU, int id)
+        {
+
+            MySqlCommand cmd = new MySqlCommand("call sp_UpdateUsuario(@id, @nome, @senha)", con.MyConectarBD());
+
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@nome", mU.NomeUsu);
+            cmd.Parameters.AddWithValue("@senha", mU.SenhaUsu);
+
+            cmd.ExecuteNonQuery();
+
+            con.MyDesConectarBD();
+           
+        }
+
+      
+
+        public List<mUsuario> BuscarFuncionarioCod(int id)
+        {
+            List<mUsuario> funcList = new List<mUsuario>();
+
+            MySqlCommand cmd = new MySqlCommand("call pcd_Select_UsuarioPorCod(@id) ", con.MyConectarBD());
+
+            cmd.Parameters.AddWithValue("@id", id);
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            con.MyDesConectarBD();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                funcList.Add(new mUsuario
+                {
+
+                    IdUsu = Convert.ToInt16(dr["id_Usu"]),
+                    NomeUsu = Convert.ToString(dr["nome_Usu"]),
+
+                }
+
+                );
+
+
+            }
+
+            return funcList;
+        }
+
     }
 }

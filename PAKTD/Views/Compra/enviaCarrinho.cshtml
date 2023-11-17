@@ -1,0 +1,24 @@
+﻿@model IEnumerable<PAKTD.Models.MO.mProduto>
+
+@{
+    ViewBag.Title = "enviaCarrinho";
+
+}
+
+<h2>enviaCarrinho</h2>
+@if (Session["carrinho"] != null && Session["carrinho"] is Dictionary<int, int>
+  carrinho)
+{
+
+    foreach (var produto in Model)
+
+
+    {
+
+        <h4>@produto.NmPro</h4>
+    }
+
+
+
+
+}

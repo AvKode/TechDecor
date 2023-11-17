@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PAKTD.Models.AC;
+using PAKTD.Models.MO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,23 +10,34 @@ namespace PAKTD.Controllers
 {
     public class HomeController : Controller
     {
+
+        aProduto aP = new aProduto();
         public ActionResult Index()
         {
-            return View();
+            mCompra carrinho = Session["Carrinho"] != null ? (mCompra)Session["Carrinho"] : new mCompra();
+
+        
+          
+
+            return View(aP.BuscarProd());
+          
         }
 
-        public ActionResult About()
+
+        public ActionResult BuscaProduto()
         {
-            ViewBag.Message = "Your application description page.";
+
 
             return View();
         }
 
-        public ActionResult Contact()
+        [HttpPost]
+        public ActionResult BuscaProduto(string txtPesquisa)
         {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
+
+            return View(aP.PesquisaProduto(txtPesquisa));
         }
-    }
+
+    }  
 }

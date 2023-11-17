@@ -1,0 +1,1583 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DatatableJS</name>
+    </assembly>
+    <members>
+        <member name="T:DatatableJS.CallbackBuilder`1">
+            <summary>
+            Generic callback builder class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.#ctor(DatatableJS.GridBuilder{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:DatatableJS.CallbackBuilder`1"/> class.
+            </summary>
+            <param name="grid"></param>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.CreatedRow(System.String)">
+            <summary>
+            Set createdRow function <see href="https://datatables.net/reference/option/createdRow">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.DrawCallback(System.String)">
+            <summary>
+            Set drawCallback function <see href="https://datatables.net/reference/option/drawCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.FooterCallback(System.String)">
+            <summary>
+            Set footerCallback function <see href="https://datatables.net/reference/option/footerCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.FormatNumber(System.String)">
+            <summary>
+            Set formatNumber function <see href="https://datatables.net/reference/option/formatNumber">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.HeaderCallback(System.String)">
+            <summary>
+            Set headerCallback function <see href="https://datatables.net/reference/option/headerCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.InfoCallback(System.String)">
+            <summary>
+            Set infoCallback function <see href="https://datatables.net/reference/option/infoCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.InitComplete(System.String)">
+            <summary>
+            Set initComplete function <see href="https://datatables.net/reference/option/initComplete">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.PreDrawCallback(System.String)">
+            <summary>
+            Set preDrawCallback function <see href="https://datatables.net/reference/option/preDrawCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.RowCallback(System.String)">
+            <summary>
+            Set rowCallback function <see href="https://datatables.net/reference/option/rowCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.StateLoadCallback(System.String)">
+            <summary>
+            Set stateLoadCallback function <see href="https://datatables.net/reference/option/stateLoadCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.StateLoadParams(System.String)">
+            <summary>
+            Set stateLoadParams function <see href="https://datatables.net/reference/option/stateLoadParams">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.StateLoaded(System.String)">
+            <summary>
+            Set stateLoaded function <see href="https://datatables.net/reference/option/stateLoaded">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.StateSaveCallback(System.String)">
+            <summary>
+            Set stateSaveCallback function <see href="https://datatables.net/reference/option/stateSaveCallback">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.CallbackBuilder`1.StateSaveParams(System.String)">
+            <summary>
+            Set stateSaveParams function <see href="https://datatables.net/reference/option/stateSaveParams">Reference:</see>
+            </summary>
+            <param name="functionName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.ColReorderBuilder`1">
+            <summary>
+            Generic col reorder builder class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DatatableJS.ColReorderBuilder`1.#ctor(DatatableJS.GridBuilder{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:DatatableJS.ColReorderBuilder`1"/> class.
+            </summary>
+            <param name="grid"></param>
+        </member>
+        <member name="M:DatatableJS.ColReorderBuilder`1.Enable(System.Boolean)">
+            <summary>
+            Initial enablement state of ColReorder. Default value is "true". <see href="https://datatables.net/reference/option/colReorder.enable">Reference:</see> 
+            </summary>
+            <param name="value">true</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColReorderBuilder`1.FixedColumnsLeft(System.Int32)">
+            <summary>
+            Disallow x columns from reordering (counting from the left). Default is "0". <see href="https://datatables.net/reference/option/colReorder.fixedColumnsLeft">Reference:</see>
+            </summary>
+            <param name="value">0</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColReorderBuilder`1.FixedColumnsRight(System.Int32)">
+            <summary>
+            Disallow x columns from reordering (counting from the right). Default is "0". <see href="https://datatables.net/reference/option/colReorder.fixedColumnsLeft">Reference:</see>
+            </summary>
+            <param name="value">0</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColReorderBuilder`1.Order(System.Int32[])">
+            <summary>
+            Set a default order for the columns in the table. <see href="https://datatables.net/reference/option/colReorder.order">Reference:</see>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColReorderBuilder`1.RealTime(System.Boolean)">
+            <summary>
+            Enable / disable live reordering of columns during a drag. Default is "true". <see href="https://datatables.net/reference/option/colReorder.realtime">Reference:</see>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.ColumnBuilder`1">
+            <summary>
+            Generic column builder class.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.#ctor(DatatableJS.GridBuilder{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:DatatableJS.ColumnBuilder`1"/> class.
+            </summary>
+            <param name="grid">The grid.</param>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Field``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            Make a column with defined type properties.
+            </summary>
+            <typeparam name="TProp">The type of the property.</typeparam>
+            <param name="property">The property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Title(System.String)">
+            <summary>
+            Set column title.
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Visible(System.Boolean)">
+            <summary>
+            Set column visible or hidden, default is true.
+            </summary>
+            <param name="isVisible"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Orderable(System.Boolean)">
+            <summary>
+            Set column orderable or not, default is true.
+            </summary>
+            <param name="isOrderable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Searchable(System.Boolean)">
+            <summary>
+            Set column searchable or not, default is true.
+            </summary>
+            <param name="isSearchable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Width(System.Int32)">
+            <summary>
+            Set column width percentage.
+            </summary>
+            <param name="width"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Class(System.String)">
+            <summary>
+            Set css class of column.
+            </summary>
+            <param name="className"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.DefaultContent(System.String)">
+            <summary>
+            Set default value for null data
+            </summary>
+            <param name="defaultContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Format(System.String)">
+            <summary>
+            Set a jquery datatable date format.
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Template(System.String)">
+            <summary>
+            Customize column template using "data" for comparison.
+            </summary>
+            <param name="template"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Command``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.String,System.String,System.String)">
+            <summary>
+            Define a link or button.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="onClick"></param>
+            <param name="iconClass"></param>
+            <param name="btnClass"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Command``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.String,System.String)">
+            <summary>
+            Define a link or button.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="onClick"></param>
+            <param name="iconClass"></param>
+            <param name="btnClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Command``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String,System.String)">
+            <summary>
+            Define a link or button.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="onClick"></param>
+            <param name="iconClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Command``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String)">
+            <summary>
+            Define a link or button.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="onClick"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Commands``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Collections.Generic.IEnumerable{DatatableJS.Command},System.String,System.String,System.String)">
+            <summary>
+            Add multiple command to define button group.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="btnText"></param>
+            <param name="btnClass"></param>
+            <param name="iconClass"></param>
+            <param name="commands"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Commands``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Collections.Generic.IEnumerable{DatatableJS.Command})">
+            <summary>
+            Add multiple command to define button group.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="commands"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Commands``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Collections.Generic.IEnumerable{DatatableJS.Command},System.String)">
+            <summary>
+            Add multiple command to define button group.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="commands"></param>
+            <param name="btnText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.ColumnBuilder`1.Commands``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Collections.Generic.IEnumerable{DatatableJS.Command},System.String,System.String)">
+            <summary>
+            Add multiple command to define button group.
+            </summary>
+            <typeparam name="TProp"></typeparam>
+            <param name="property"></param>
+            <param name="commands"></param>
+            <param name="btnText"></param>
+            <param name="btnClass"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.FilterBuilder`1">
+            <summary>
+            Generic filter builder class.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.#ctor(DatatableJS.GridBuilder{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:DatatableJS.FilterBuilder`1"/> class.
+            </summary>
+            <param name="grid">The grid.</param>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.Add``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            Adds the specified property for filter.
+            </summary>
+            <typeparam name="TProp">The type of the property.</typeparam>
+            <param name="property">The property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.Equal(System.Object)">
+            <summary>
+            Equals the specified value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.NotEqual(System.Object)">
+            <summary>
+            Nots the equal.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.GreaterThan(System.Object)">
+            <summary>
+            Greaters the than.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.Contains(System.Object)">
+            <summary>
+            Determines whether this instance contains the object.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.EndsWith(System.Object)">
+            <summary>
+            Endses the with.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.GreaterThanOrEqual(System.Object)">
+            <summary>
+            Greaters the than or equal.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.LessThan(System.Object)">
+            <summary>
+            Lesses the than.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.LessThanOrEqual(System.Object)">
+            <summary>
+            Lesses the than or equal.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.FilterBuilder`1.StartsWith(System.Object)">
+            <summary>
+            Startses the with.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.GridBuilder`1">
+            <summary>
+            Generic grid builder class.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.#ctor(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)">
+            <summary>
+            
+            </summary>
+            <param name="htmlHelper"></param>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Name(System.String)">
+            <summary>
+            Default name is "DataGrid".
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Columns(System.Action{DatatableJS.ColumnBuilder{`0}})">
+            <summary>
+            Define table columns.
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Filters(System.Action{DatatableJS.FilterBuilder{`0}})">
+            <summary>
+            Filter data with request.
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Orders(System.Action{DatatableJS.OrderBuilder{`0}})">
+            <summary>
+            Enable ordering and set default orders.
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Callbacks(System.Action{DatatableJS.CallbackBuilder{`0}})">
+            <summary>
+            Set callback functions. <see href="https://datatables.net/reference/option/">Reference:</see>
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Language(System.Action{DatatableJS.LanguageBuilder{`0}})">
+            <summary>
+            Allowing you to modified all strings individually or completely replace them all as required.  <see href="https://datatables.net/reference/option/language">Reference:</see>
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Language(System.String)">
+            <summary>
+            Specify language json url from cdn or local.
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.URL(System.String,System.String,System.Boolean)">
+            <summary>
+            Set the action url, type and json naming policy is camelcase, default is false.
+            </summary>
+            <param name="url"></param>
+            <param name="method"></param>
+            <param name="camelCase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.URL(System.String,System.String)">
+            <summary>
+            Set the action url and type.
+            </summary>
+            <param name="url"></param>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.URL(System.String)">
+            <summary>
+            Set the action url and type, default type is GET.
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Ordering(System.Boolean)">
+            <summary>
+            Disable or enable ordering, default is true.
+            </summary>
+            <param name="ordering"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Searching(System.Boolean)">
+            <summary>
+            Disable or enable searching, default is true.
+            </summary>
+            <param name="searching"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.FixedColumns(System.Int32,System.Int32)">
+            <summary>
+            Fix the table columns from left or right.
+            </summary>
+            <param name="leftColumns"></param>
+            <param name="rightColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.FixedColumns(System.Int32)">
+            <summary>
+            Fix the table columns from left.
+            </summary>
+            <param name="leftColumns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ServerSide(System.Boolean)">
+            <summary>
+            Enable server-side processing mode.
+            </summary>
+            <param name="serverSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Data(System.String)">
+            <summary>
+            Passing additional data to action set name of javascript function.
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Dom(System.String)">
+            <summary>
+            Dom allow to control position of datatable elements
+            </summary>
+            <see cref="!:https://datatables.net/reference/option/dom"/>
+            <param name="dom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Class(System.String)">
+            <summary>
+            Set css class of table.
+            </summary>
+            <param name="cssClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Captions(System.String,System.String)">
+            <summary>
+            Define table top or bottom captions.
+            </summary>
+            <param name="top"></param>
+            <param name="bottom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Captions(System.String)">
+            <summary>
+            Define table top caption.
+            </summary>
+            <param name="top"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Paging(System.Boolean)">
+            <summary>
+            Disable or enable paging, default is true.
+            </summary>
+            <param name="paging"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ColumnSearching(System.Boolean,System.String,DatatableJS.SearchPosition)">
+            <summary>
+            Enable columns search feature.
+            </summary>
+            <param name="searching">if set to <c>true</c> [searching].</param>
+            <param name="css"></param>       
+            <param name="position">default is footer</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ColumnSearching(System.Boolean,DatatableJS.SearchPosition)">
+            <summary>
+            Enable columns search feature.
+            </summary>
+            <param name="searching">if set to <c>true</c> [searching].</param>
+            <param name="position">default is footer</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ColumnSearching(System.Boolean,System.String)">
+            <summary>
+            Enable columns search feature.
+            </summary>
+            <param name="searching">if set to <c>true</c> [searching].</param>
+            <param name="css"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ColumnSearching(System.Boolean)">
+            <summary>
+            Enable columns search feature.
+            </summary>
+            <param name="searching"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.LengthMenu(System.Int32[],System.Boolean,System.String)">
+            <summary>
+            Define table length menu.
+            </summary>
+            <param name="values"></param>
+            <param name="hasAll"></param>
+            <param name="allText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.LengthMenu(System.Int32[],System.Boolean)">
+            <summary>
+            Define table length menu.
+            </summary>
+            <param name="values"></param>
+            <param name="hasAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.LengthMenu(System.Int32[])">
+            <summary>
+            Define table length menu.
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.PageLength(System.Int32)">
+            <summary>
+            Define table page length.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Processing(System.Boolean)">
+            <summary>
+            Enable or disable the display of a 'processing' indicator when the table is being processed, Default is true.
+            </summary>
+            <param name="processing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ScrollX(System.Boolean)">
+            <summary>
+            Enable horizontal scrolling. When a table is too wide to fit into a certain layout, or you have a large number of columns in the table, you can enable horizontal (x) scrolling to show the table in a viewport, which can be scrolled.
+            </summary>
+            <param name="scrollX"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.StateSave(System.Boolean)">
+            <summary>
+            Enable or disable state saving such as pagination position, display length, filtering and sorting information.
+            </summary>
+            <param name="stateSave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Selecting(System.Boolean,DatatableJS.SelectItems,DatatableJS.SelectStyle,System.Boolean,System.Boolean)">
+            <summary>
+            Enable selection and set properties
+            </summary>
+            <param name="enable">Enable the selectable grid, default is false.</param>
+            <param name="items">Set the selection behaviour.</param>
+            <param name="style">Set the selection style.</param>
+            <param name="info">Disable the visibility of selected row info on grid, default is true.</param>
+            <param name="toggleable">Disable the toggleable selection, default is true.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Selecting(System.Boolean,DatatableJS.SelectItems,DatatableJS.SelectStyle,System.Boolean)">
+            <summary>
+            Enable selection and set properties
+            </summary>
+            <param name="enable"></param>
+            <param name="items"></param>
+            <param name="style"></param>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Selecting(System.Boolean,DatatableJS.SelectItems,DatatableJS.SelectStyle)">
+            <summary>
+            Enable selection and set properties
+            </summary>
+            <param name="enable"></param>
+            <param name="items"></param>
+            <param name="style"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Selecting(System.Boolean,DatatableJS.SelectItems)">
+            <summary>
+            Enable selection and set properties
+            </summary>
+            <param name="enable"></param>
+            <param name="items"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.Selecting(System.Boolean)">
+            <summary>
+            Enable selection and set properties
+            </summary>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ColReorder(System.Boolean)">
+            <summary>
+            Enable ColReorder for a table. <see href="https://datatables.net/reference/option/colReorder">Reference:</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.GridBuilder`1.ColReorder(System.Action{DatatableJS.ColReorderBuilder{`0}})">
+            <summary>
+            Enable and configure the ColReorder extension for DataTables. <see href="https://datatables.net/reference/option/#colreorder">Reference:</see>
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.LanguageBuilder`1">
+            <summary>
+            Generic language builder class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.#ctor(DatatableJS.GridBuilder{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:DatatableJS.LanguageBuilder`1"/> class.
+            </summary>
+            <param name="grid"></param>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.Decimal(System.String)">
+            <summary>
+            Set the decimal place character.  <see href="https://datatables.net/reference/option/language.decimal">Reference:</see>
+            </summary>
+            <param name="place"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.EmptyTable(System.String)">
+            <summary>
+            This string is shown when the table is empty of data (regardless of filtering).  <see href="https://datatables.net/reference/option/language.emptyTable">Reference:</see>
+            </summary>
+            <param name="message">No data available in table</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.Info(System.String)">
+            <summary>
+            This string gives information to the end user about the information that is current on display on the page. <see href="https://datatables.net/reference/option/language.info">Reference:</see>
+            </summary>
+            <param name="message">Showing _START_ to _END_ of _TOTAL_ entries</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.InfoEmpty(System.String)">
+            <summary>
+            Display information string for when the table is empty. <see href="https://datatables.net/reference/option/language.infoEmpty">Reference:</see>
+            </summary>
+            <param name="message">Showing 0 to 0 of 0 entries</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.InfoFiltered(System.String)">
+            <summary>
+            When a user filters the information in a table, this string is appended to the information (info) to give an idea of how strong the filtering is. <see href="https://datatables.net/reference/option/language.infoFiltered">Reference:</see>
+            </summary>
+            <param name="message">(filtered from _MAX_ total entries)</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.InfoPostFix(System.String)">
+            <summary>
+            If can be useful to append extra information to the info string at times, and this variable does exactly that. <see href="https://datatables.net/reference/option/language.infoPostFix">Reference:</see>
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.Thousands(System.String)">
+            <summary>
+            The thousands separator option is used for output of information only. <see href="https://datatables.net/reference/option/language.thousands">Reference:</see>
+            </summary>
+            <param name="place">,</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.LengthMenu(System.String)">
+            <summary>
+            Detail the action that will be taken when the drop down menu for the pagination length option is changed. <see href="https://datatables.net/reference/option/language.lengthMenu">Reference:</see>
+            </summary>
+            <param name="message">Show _MENU_ entries</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.LoadingRecords(System.String)">
+            <summary>
+            This message is shown in an empty row in the table to indicate to the end user the the data is being loaded. <see href="https://datatables.net/reference/option/language.loadingRecords">Reference:</see>
+            </summary>
+            <param name="message">Loading...</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.Processing(System.String)">
+            <summary>
+            Text that is displayed when the table is processing a user action (usually a sort command or similar). <see href="https://datatables.net/reference/option/language.processing">Reference:</see>
+            </summary>
+            <param name="message">{Empty string}</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.Search(System.String)">
+            <summary>
+            Sets the string that is used for DataTables filtering input control. <see href="https://datatables.net/reference/option/language.search">Reference:</see>
+            </summary>
+            <param name="message">Search:</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.ZeroRecords(System.String)">
+            <summary>
+            Text shown inside the table records when the is no information to be displayed after filtering. <see href="https://datatables.net/reference/option/language.zeroRecords">Reference:</see>
+            </summary>
+            <param name="message">No matching records found</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.Paginate(System.String,System.String,System.String,System.String)">
+            <summary>
+            Pagination string used by DataTables for the built-in pagination control types. <see href="https://datatables.net/reference/option/language.paginate">Reference:</see>
+            </summary>
+            <param name="first">First</param>
+            <param name="last">Last</param>
+            <param name="next">Next</param>
+            <param name="previous">Previous</param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.LanguageBuilder`1.Aria(System.String,System.String)">
+            <summary>
+            Language strings used for WAI-ARIA specific attributes. <see href="https://datatables.net/reference/option/language.aria">Reference:</see>
+            </summary>
+            <param name="sortAscending">: activate to sort column ascending</param>
+            <param name="sortDescending">: activate to sort column descending</param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.OrderBuilder`1">
+            <summary>
+            Generic order builder class.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DatatableJS.OrderBuilder`1.#ctor(DatatableJS.GridBuilder{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:DatatableJS.OrderBuilder`1"/> class.
+            </summary>
+            <param name="grid">The grid.</param>
+        </member>
+        <member name="M:DatatableJS.OrderBuilder`1.Add``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},DatatableJS.OrderBy)">
+            <summary>
+            Adds the specified property for default ordering.
+            </summary>
+            <typeparam name="TProp">The type of the property.</typeparam>
+            <param name="property">The property.</param>
+            <param name="orderBy">The order.</param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.Exceptions.ColumnNotFoundException">
+            <summary>
+            Exception thrown when a column is not found.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Exceptions.ColumnNotFoundException.#ctor">
+            <summary>
+            Create a new exception of type ColumnNotFoundException.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Exceptions.ColumnNotFoundException.#ctor(System.String)">
+            <summary>
+            Create a new exception of type ColumnNotFoundException.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DatatableJS.Exceptions.ColumnNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Create a new exception of type ColumnNotFoundException.
+            </summary>
+            <param name="message"></param>
+            <param name="inner"></param>
+        </member>
+        <member name="T:DatatableJS.Helpers.AriaHelper">
+            <summary>
+            Language strings used for WAI-ARIA specific attributes.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.AriaHelper.SortAscending">
+            <summary>
+            Default is ': activate to sort column ascending'.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.AriaHelper.SortDescending">
+            <summary>
+            Default is ': activate to sort column descending'.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Helpers.AriaHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.Helpers.CallbackHelper">
+            <summary>
+            Set callback functions. <see href="https://datatables.net/reference/option/">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.CreatedRow">
+            <summary>
+            Set createdRow function <see href="https://datatables.net/reference/option/createdRow">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.DrawCallback">
+            <summary>
+            Set drawCallback function <see href="https://datatables.net/reference/option/drawCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.FooterCallback">
+            <summary>
+            Set footerCallback function <see href="https://datatables.net/reference/option/footerCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.FormatNumber">
+            <summary>
+            Set formatNumber function <see href="https://datatables.net/reference/option/formatNumber">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.HeaderCallback">
+            <summary>
+            Set headerCallback function <see href="https://datatables.net/reference/option/headerCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.InfoCallback">
+            <summary>
+            Set infoCallback function <see href="https://datatables.net/reference/option/infoCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.InitComplete">
+            <summary>
+            Set initComplete function <see href="https://datatables.net/reference/option/initComplete">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.PreDrawCallback">
+            <summary>
+            Set preDrawCallback function <see href="https://datatables.net/reference/option/preDrawCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.RowCallback">
+            <summary>
+            Set rowCallback function <see href="https://datatables.net/reference/option/rowCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.StateLoadCallback">
+            <summary>
+            Set stateLoadCallback function <see href="https://datatables.net/reference/option/stateLoadCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.StateLoadParams">
+            <summary>
+            Set stateLoadParams function <see href="https://datatables.net/reference/option/stateLoadParams">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.StateLoaded">
+            <summary>
+            Set stateLoaded function <see href="https://datatables.net/reference/option/stateLoaded">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.StateSaveCallback">
+            <summary>
+            Set stateSaveCallback function <see href="https://datatables.net/reference/option/stateSaveCallback">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.CallbackHelper.StateSaveParams">
+            <summary>
+            Set stateSaveParams function <see href="https://datatables.net/reference/option/stateSaveParams">Reference:</see>
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Helpers.CallbackHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.Helpers.ColReorderHelper">
+            <summary>
+            Define table col reorder.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.ColReorderHelper.Enable">
+            <summary>
+            Initial enablement state of ColReorder. Default value is "true". <see href="https://datatables.net/reference/option/colReorder.enable">Reference:</see> 
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.ColReorderHelper.FixedColumnsLeft">
+            <summary>
+            Disallow x columns from reordering (counting from the left). Default is "0". <see href="https://datatables.net/reference/option/colReorder.fixedColumnsLeft">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.ColReorderHelper.FixedColumnsRight">
+            <summary>
+            Disallow x columns from reordering (counting from the right). Default is "0". <see href="https://datatables.net/reference/option/colReorder.fixedColumnsLeft">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.ColReorderHelper.Order">
+            <summary>
+            Set a default order for the columns in the table. <see href="https://datatables.net/reference/option/colReorder.order">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.ColReorderHelper.RealTime">
+            <summary>
+            Enable / disable live reordering of columns during a drag. Default is "true". <see href="https://datatables.net/reference/option/colReorder.realtime">Reference:</see>
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Helpers.ColReorderHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.Helpers.LengthMenuHelper">
+            <summary>
+            Define table length menu.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.LengthMenuHelper.Values">
+            <summary>
+            Set the values of LengthMenu
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.LengthMenuHelper.HasAll">
+            <summary>
+            Add All option on LengthMenu
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.LengthMenuHelper.AllText">
+            <summary>
+            Set a text for LengtMenu All option, default is "All"
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Helpers.LengthMenuHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.Helpers.OrdersHelper">
+            <summary>
+            Enable ordering and set default orders.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Helpers.OrdersHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.Helpers.OrderHelper">
+            <summary>
+            Adds the specified property for default ordering.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Helpers.OrderHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.Helpers.PaginateHelper">
+            <summary>
+            Pagination specific language strings.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.PaginateHelper.First">
+            <summary>
+            Pagination 'First' button string.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.PaginateHelper.Last">
+            <summary>
+            Pagination 'Last' button string.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.PaginateHelper.Next">
+            <summary>
+            Pagination 'Next' button string.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.Helpers.PaginateHelper.Previous">
+            <summary>
+            Pagination 'Previous' button string.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.Helpers.PaginateHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.CaptionsHelper">
+            <summary>
+            Define table top or bottom captions.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.CaptionsHelper.Top">
+            <summary>
+            Define table top caption.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.CaptionsHelper.Bottom">
+            <summary>
+            Define table bottom caption.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.CaptionsHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.ColumnsHelper">
+            <summary>
+            Columns builder.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.ColumnsHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.ColumnHelper">
+            <summary>
+            Column builder.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.Field">
+            <summary>
+            Make a column with defined type properties.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.Title">
+            <summary>
+            Set column title.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.Visible">
+            <summary>
+            Set column visible or hidden, default is true.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.Orderable">
+            <summary>
+            Set column orderable or not, default is true.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.Searchable">
+            <summary>
+            Set column searchable or not, default is true.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.Width">
+            <summary>
+            Set column width percentage.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.ClassName">
+            <summary>
+            Set css class of column.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.ColumnHelper.DefaultContent">
+            <summary>
+            Set default value for null data
+            </summary>
+        </member>
+        <member name="M:DatatableJS.ColumnHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.CommandHelper">
+            <summary>
+            Add a command to define button.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.CommandHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.CommandsHelper">
+            <summary>
+            Add multiple command to define button group.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.CommandsHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.DataSourceHelper">
+            <summary>
+            Set datasource properties
+            </summary>
+        </member>
+        <member name="P:DatatableJS.DataSourceHelper.URL">
+            <summary>
+            URL
+            </summary>
+        </member>
+        <member name="P:DatatableJS.DataSourceHelper.Method">
+            <summary>
+            Set the action type, default type is GET.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.DataSourceHelper.CamelCase">
+            <summary>
+            Enable Json Naming Policy as CamelCase.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.DataSourceHelper.Paging">
+            <summary>
+            Disable or enable paging, default is true.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.DataSourceHelper.ServerSide">
+            <summary>
+            Enable server-side processing mode.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.DataSourceHelper.Data">
+            <summary>
+            Passing additional data to action set name of javascript function.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.DataSourceHelper.PageLength">
+            <summary>
+            Define table page length.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.DataSourceHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.FiltersHelper">
+            <summary>
+            Filter data with request.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.FiltersHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.FilterHelper">
+            <summary>
+            Add a filter to request.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.FilterHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.FixedColumnsHelper">
+            <summary>
+            Fix the table columns from left or right.
+            </summary>
+        </member>
+        <member name="M:DatatableJS.FixedColumnsHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.GridHelper">
+            <summary>
+            Generic grid builder class.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.GridHelper.Name">
+            <summary>
+            Default name is "DataGrid".
+            </summary>
+        </member>
+        <member name="P:DatatableJS.GridHelper.Ordering">
+            <summary>
+            Disable or enable ordering, default is true.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.GridHelper.Searching">
+            <summary>
+            Disable or enable searching, default is true.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.GridHelper.Processing">
+            <summary>
+            Enable or disable the display of a 'processing' indicator when the table is being processed, Default is true.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.GridHelper.ScrollX">
+            <summary>
+            Enable horizontal scrolling. When a table is too wide to fit into a certain layout, or you have a large number of columns in the table, you can enable horizontal (x) scrolling to show the table in a viewport, which can be scrolled.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.GridHelper.StateSave">
+            <summary>
+            Enable or disable state saving such as pagination position, display length, filtering and sorting information.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.GridHelper.Dom">
+            <summary>
+            Enable control over displayed elements 
+            </summary>
+            <see cref="!:https://datatables.net/reference/option/dom"/>
+        </member>
+        <member name="M:DatatableJS.GridHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.LanguageHelper">
+            <summary>
+            Language configuration options for DataTables.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.URL">
+            <summary>
+            Set language json source URL.
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.Decimal">
+            <summary>
+            Set the decimal place character. <see href="https://datatables.net/reference/option/language.decimal">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.EmptyTable">
+            <summary>
+            This string is shown when the table is empty of data (regardless of filtering). <see href="https://datatables.net/reference/option/language.emptyTable">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.Info">
+            <summary>
+            This string gives information to the end user about the information that is current on display on the page. <see href="https://datatables.net/reference/option/language.info">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.InfoEmpty">
+            <summary>
+            Display information string for when the table is empty. <see href="https://datatables.net/reference/option/language.infoEmpty">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.InfoFiltered">
+            <summary>
+            When a user filters the information in a table, this string is appended to the information (info) to give an idea of how strong the filtering is. <see href="https://datatables.net/reference/option/language.infoFiltered">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.InfoPostFix">
+            <summary>
+            If can be useful to append extra information to the info string at times, and this variable does exactly that. <see href="https://datatables.net/reference/option/language.infoPostFix">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.Thousands">
+            <summary>
+            The thousands separator option is used for output of information only. <see href="https://datatables.net/reference/option/language.thousands">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.LengthMenu">
+            <summary>
+            Detail the action that will be taken when the drop down menu for the pagination length option is changed. <see href="https://datatables.net/reference/option/language.lengthMenu">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.LoadingRecords">
+            <summary>
+            This message is shown in an empty row in the table to indicate to the end user the the data is being loaded. <see href="https://datatables.net/reference/option/language.loadingRecords">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.Processing">
+            <summary>
+            Text that is displayed when the table is processing a user action (usually a sort command or similar). <see href="https://datatables.net/reference/option/language.processing">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.Search">
+            <summary>
+            Sets the string that is used for DataTables filtering input control. <see href="https://datatables.net/reference/option/language.search">Reference:</see>
+            </summary>
+        </member>
+        <member name="P:DatatableJS.LanguageHelper.ZeroRecords">
+            <summary>
+            Text shown inside the table records when the is no information to be displayed after filtering. <see href="https://datatables.net/reference/option/language.zeroRecords">Reference:</see>
+            </summary>
+        </member>
+        <member name="M:DatatableJS.LanguageHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.RenderHelper">
+            <summary>
+            Render datatable to create
+            </summary>
+        </member>
+        <member name="M:DatatableJS.RenderHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            Process
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+        </member>
+        <member name="T:DatatableJS.JSHelper">
+            <summary>
+            JS() helper extenstions
+            </summary>
+        </member>
+        <member name="M:DatatableJS.JSHelper.#ctor(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)">
+            <summary>
+            Call JS() helper extensions after
+            </summary>
+            <param name="helper"></param>
+        </member>
+        <member name="M:DatatableJS.JSHelper.Datatable``1">
+            <summary>
+            Make a datatable with expression
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.JSHelperExtension">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DatatableJS.JSHelperExtension.JS(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper)">
+            <summary>
+            Splitted html helpers extensions
+            </summary>
+            <param name="helper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.JSHelperExtension.Render``1(DatatableJS.GridBuilder{``0})">
+            <summary>
+            Render both html and script
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="grid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.JSHelperExtension.RenderHtml``1(DatatableJS.GridBuilder{``0})">
+            <summary>
+            Render only html 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="grid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatatableJS.JSHelperExtension.RenderScript``1(DatatableJS.GridBuilder{``0})">
+            <summary>
+            Render only script
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="grid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DatatableJS.DataSourceModel">
+            <summary>
+            DataSourceModel
+            </summary>
+        </member>
+        <member name="T:DatatableJS.HttpMethodType">
+            <summary>
+            HttpMethodType
+            </summary>
+        </member>
+        <member name="F:DatatableJS.HttpMethodType.GET">
+            <summary>
+            GET
+            </summary>
+        </member>
+        <member name="F:DatatableJS.HttpMethodType.POST">
+            <summary>
+            POST
+            </summary>
+        </member>
+        <member name="T:DatatableJS.SelectItems">
+            <summary>
+            Set which items are selectable (row, column, cell, row with checkbox). Default is row.
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectItems.Row">
+            <summary>
+            Enable row selection.
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectItems.Column">
+            <summary>
+            Enable column selection.
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectItems.Cell">
+            <summary>
+            Enable cell selection.
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectItems.Checkbox">
+            <summary>
+            Enable row selection with checkbox.
+            </summary>
+        </member>
+        <member name="T:DatatableJS.SelectStyle">
+            <summary>
+            Set select style functionalities.
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectStyle.Default">
+            <summary>
+            Select just for single item, to select multiple just click with CTRL button.
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectStyle.Single">
+            <summary>
+            Only single item can be selected.
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectStyle.Multi">
+            <summary>
+            Multiple selectable with one click 
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SelectStyle.MultiShift">
+            <summary>
+            Multi-item with rangle selection 
+            </summary>
+        </member>
+        <member name="T:DatatableJS.SearchPosition">
+            <summary>
+            Select position of the column search box
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SearchPosition.Footer">
+            <summary>
+            Footer
+            </summary>
+        </member>
+        <member name="F:DatatableJS.SearchPosition.Header">
+            <summary>
+            Header
+            </summary>
+        </member>
+        <member name="T:DatatableJS.GridModel">
+            <summary>
+            GridModel
+            </summary>
+        </member>
+        <member name="M:DatatableJS.GridModel.#ctor">
+            <summary>
+            GridModel()
+            </summary>
+        </member>
+    </members>
+</doc>

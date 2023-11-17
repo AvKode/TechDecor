@@ -1,46 +1,61 @@
 ﻿@model IEnumerable<PAKTD.Models.MO.mUsuario>
-    @{
-        ViewBag.Title = "ListarFuncionario";
-        Layout = "~/Views/Dashboard/_Layout.cshtml";
-    }
+@{
+    ViewBag.Title = "ListarFuncionario";
+    Layout = "~/Views/Dashboard/_Layout.cshtml";
+}
+
+<link href="~/Style/FuncionarioStyle/Func.css" rel="stylesheet" />
 
 
-    <h2 class="text-center">CLIENTES CADASTRADOS</h2>
-    <table id="example" class="table table-striped table-bordered" style="width:100%">
-        <thead>
-            <tr class="bg-success">
-                <th>Código</th>
-                <th>Nome</th>
-                <th>Tipo</th>
+<link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
 
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null)
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<h2 class="text-center">FUNCIONÁRIOS CADASTRADOS</h2>
+<table id="funcTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr class="bg-success">
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+
+            foreach (var funcionario in Model)
             {
-
-                foreach (var funcionario in Model)
-                {
-                    <tr>
-                        <td>@funcionario.IdUsu</td>
-                        <td>@funcionario.NomeUsu</td>
-                        <td>Funcionário</td>
-
-                    </tr>
-                };
-            }
-            else
-            {
-
                 <tr>
-                    <td class="text-center" colspan="5">Nenhum funcionário cadastrado.</td>
+                    <td>@funcionario.IdUsu</td>
+                    <td>@funcionario.NomeUsu</td>
+                    <td>Funcionário</td>
+                    <td>
+
+                        @Html.ActionLink("Editar", "alterarFuncionario", "Funcionario", new { id = funcionario.IdUsu }, new { @class = "btn btn-outline-warning" })
+                        @Html.ActionLink("Excluir", "ExcluirFuncionario", "Funcionario", new { id = funcionario.IdUsu }, new { @class = "btn btn-outline-danger", @type = "button", onclick = "return confirm('Deseja realmente excluir?');" })
+
+                    </td>
                 </tr>
+            };
+        }
+        else
+        {
 
-            }
+            <tr>
+                <td class="text-center" colspan="5">Nenhum funcionário cadastrado.</td>
+            </tr>
 
-        </tbody>
+        }
 
-    </table>
+    </tbody>
 
+</table>
 
+<script>
 
+    new DataTable('#funcTable');
+
+</script>

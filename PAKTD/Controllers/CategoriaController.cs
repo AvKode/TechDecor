@@ -36,5 +36,13 @@ namespace PAKTD.Controllers
           return RedirectToAction("ListarCategoria", "Categoria");
         }
 
+        public ActionResult ExcluirCategoria(int id)
+        {
+
+            aC.DeletarCat(id);
+
+            return RedirectToAction("ListarCategoria", "Categoria");
+        }
+
     }
 }

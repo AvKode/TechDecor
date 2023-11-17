@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Data;
+using System.Web;
 using System.Web.Optimization;
 
 namespace PAKTD
@@ -9,7 +10,12 @@ namespace PAKTD
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/datatables.js",
+                        "~/Scripts/datatables.min.js",
+                        "~/Scripts/jquery-3.7.0.js",
+                        "~/Scripts/jquery-3.7.0.min.js"));
+
+           
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));

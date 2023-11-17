@@ -35,5 +35,26 @@ namespace PAKTD.Controllers
 
             return View(aF.BuscarFunc());
         }
+
+
+        public ActionResult alterarFuncionario(int id)
+        {
+            aF.BuscarFuncionarioCod(id);
+            return View();
+
+        }
+        [HttpPost]
+        public ActionResult alterarFuncionario(mUsuario mU, int id)
+        {
+            aF.AtualizarFuncionario(mU,id);
+            return RedirectToAction("listarFuncionario", "Funcionario");
+        }
+        public ActionResult ExcluirFuncionario(int id)
+        {
+
+            aF.DeletarFunc(id);
+
+            return RedirectToAction("listarFuncionario", "Funcionario");
+        }
     }
 }

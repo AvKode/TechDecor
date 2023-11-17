@@ -1,29 +1,69 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark" style="background-color: black;">
         <div class="container">
-            @Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("TechDecor", "Index", "Home", null, new { style = "color:#24cc7b;", @class = "navbar-brand" })
+
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar a navegação" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Página Inicial", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Sobre", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+
                     <li>@Html.ActionLink("Dashboard", "Index", "Dashboard", new { area = "" }, new { @class = "nav-link" })</li>
+
+                    <li>@Html.ActionLink("Login", "Logar", "ClienteUsuario", new { area = "" }, new { @class = "nav-link" })</li>
+
+
+
                 </ul>
+
             </div>
+
+
+        </div>
+
+        <div class="container body-content">
+            @using (Html.BeginForm("BuscaProduto", "Home", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="txtPesquisa" placeholder="Pesquise..." aria-label="Search" aria-describedby="search-button">
+                    <button class="btn btn-primary" style="background-color:#24cc7b;border:none;" type="submit" id="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            }
+        </div>
+
+        <div class="mr-4" style="margin-right:1.5vw;">
+            <p data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <img width="34" height="34" src="https://img.icons8.com/pastel-glyph/64/24cc7b/shopping-cart--v1.png" alt="shopping-cart" /></p>
+        </div>
+
+        <div class="mr-4" style="margin-right:4vw;">
+            <img width="34" height="34" src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/24cc7b/external-user-web-programming-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" alt="external-user-web-programming-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto" />
         </div>
     </nav>
     <div class="container body-content">
@@ -33,8 +73,9 @@
             <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
         </footer>
     </div>
-
+ 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/inputmask")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

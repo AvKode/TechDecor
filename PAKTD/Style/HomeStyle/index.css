@@ -1,0 +1,84 @@
+﻿body {
+    background-color: azure;
+}
+
+.carousel {
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+}
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.w-100 {
+    border-radius: 10px;
+    transition: 0.9s;
+}
+
+    .w-100:hover {
+        border-radius: 20px;
+        filter: contrast(140%);
+    }
+
+.img-carr {
+    display: flex;
+    justify-content: center;
+}
+
+.img-second1, .img-second2, .img-second3 {
+    width: 16vw;
+    height: 8vw;
+    border-radius: 8px;
+    margin-left: 2vw;
+}
+
+.img-DivSecond {
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    margin-right: 1vw;
+}
+
+.prod-title {
+    text-align: center;
+}
+
+.sec-prod {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+}
+
+a.btn.btn-success, a.btn.btn-warning {
+    display: block;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.card-title, .card-text {
+    text-align: center;
+    padding: 1px;
+}
+
+img.card-img-top {
+    padding: 8px;
+    border-radius: 12px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+    img.card-img-top:hover {
+        filter: contrast(130%);
+        height: 210px;
+    }
+
+.card-img-bt {
+    width: 10vw;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}

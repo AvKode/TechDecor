@@ -76,6 +76,7 @@ namespace PAKTD.Models.AC
                 cliList.Add(new mCliente
                 {
 
+                   IdCli = Convert.ToInt32(dr["id_Cliente"]),
                    NmCli = Convert.ToString(dr["nome_Cli"]),
                    EmailCli = Convert.ToString(dr["email_Cli"]),
                    FoneCli = Convert.ToString(dr["fone_Cli"]),
@@ -109,13 +110,15 @@ namespace PAKTD.Models.AC
             cmd.ExecuteNonQuery();
             con.MyDesConectarBD();
         }
-        public void Deletar(mCliente cl)
+
+        public void DeletarCli(int id)
         {
-            MySqlCommand cmd = new MySqlCommand("", con.MyConectarBD());
-            cmd.Parameters.Add("@idCli", MySqlDbType.VarChar).Value = cl.IdCli;
-            cmd.Parameters.Add("@idUsu", MySqlDbType.VarChar).Value = cl.IdfkUsu;
+            MySqlCommand cmd = new MySqlCommand("call pcd_Deletar_Cliente(@vCod)", con.MyConectarBD());
+
+            cmd.Parameters.AddWithValue("@vCod", id);
             cmd.ExecuteNonQuery();
             con.MyDesConectarBD();
         }
+
     }
 }

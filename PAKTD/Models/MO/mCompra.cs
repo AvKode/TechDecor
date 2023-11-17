@@ -9,6 +9,9 @@ namespace PAKTD.Models.MO
 {
     public class mCompra
     {
+
+      
+
         [DisplayName("Código da Compra")]
         public int IdCom { get; set; }
 
@@ -51,5 +54,9 @@ namespace PAKTD.Models.MO
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/aaaa}")]
         public DateTime? DtReuniao { get; set; }
+
+        public List<mItensCompra> ItensCompra { get; set; } = new List<mItensCompra>();
+
+
     }
 }
