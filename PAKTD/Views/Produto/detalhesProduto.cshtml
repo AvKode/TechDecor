@@ -1,0 +1,120 @@
+﻿@model  IEnumerable<PAKTD.Models.MO.mProduto>
+
+@{
+    ViewBag.Title = "detalhesProduto";
+}
+
+<style>
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+</style>
+
+
+
+    @foreach (var produto in Model)
+    {
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 offset-md-1 product-image">
+                <img src="@produto.ImgProd" class="img-fluid" style="width:100%; height:30vw; border-radius:0.5vw;">
+            </div>
+            <div class="col-md-7">
+                <h1 class="product-title">@produto.NmPro</h1>
+                @for (int i = 1; i <= 5; i++)
+                {
+                    <img style="margin-top:-0.5vw; width:35px; height:35px;" src="https://img.icons8.com/color/48/pixel-star.png" alt="star--v1" />
+                }
+                (43)
+                <br>
+                <div style="display:flex; align-items:center;">
+                    <img style="margin-top:-0.5vw; width:35px; height:35px;" src="https://img.icons8.com/color/48/bank-card-front-side.png" alt="bank-card-front-side" />
+                    <p class="product-price">no Cartão em até 12x</p>
+                </div>
+                <p class="product-price">De R$ 49.99 Sem juros</p>
+                <p class="product-price">A vista R$ 560,00</p>
+                <div id="QuantidadeProdDetal" style="display:flex; align-items:center; margin-top:12vw;">
+                    <div id="menosQtd" class="menosQtd">
+                        <button class="btn minus">
+                            <img width="28" height="28" style="margin-top:-0.1vw;" src="https://img.icons8.com/color/48/minus-math.png" alt="minus-math" />
+                        </button>
+                    </div>
+                    <button class="btn" style="margin-top:1vw; height:3vw; display:flex; align-items:center;">
+                        <input type='text' id="inputQtd" disabled value="1" style="width:5vw;" class="btn text-center" />
+                    </button>
+                    <div class="maisQtd">
+                        <button id="maisQtd" class="btn plus">
+                            <img width="28" height="28" style="margin-top:-0.1vw;" src="https://img.icons8.com/color/48/plus-math.png" alt="plus-math" />
+                        </button>
+                    </div>
+                    <button style="background-color:#352563; color:white; margin-left:3vw; margin-top:1vw; width:12vw;" class="btn">FAZER PEDIDO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center" style="margin-top:7vw;">AVALIAÇÕES</h1>
+
+    <div class="container mt-5">
+        <div class="comentariosDiv">
+            <h3>Bananilson Farofa</h3>
+            <div class="avaliOpcoe d-flex align-items-center mt-4">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    <img style="margin-top:-0.1vw; width:25px; height:25px;" src="https://img.icons8.com/color/48/pixel-star.png" alt="star--v1" />
+                }
+                <button style="color:white; background-color:#000000" class="btn ml-4">ÚTIL</button>
+                <button style="color:white; background-color:#762929" class="btn ml-1">DENUNCIAR</button>
+            </div>
+            <h4>Opção: Vermelho Profundo</h4>
+            <h4 class="w-75">Essa avaliação para o produto Red Squad Col-Sm-4 com certeza não foi comprada. Os desenvolvedores da loja não estão me pagando 1 quilo de farinha e 2 coca para eu dar 5 estrelas nesse produto</h4>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="comentariosDiv">
+            <h3>Clevania Macarrão com Salsicha</h3>
+            <div class="avaliOpcoe d-flex align-items-center mt-4">
+                @for (int i = 1; i <= 2; i++)
+                {
+                    <img style="margin-top:-0.1vw; width:25px; height:25px;" src="https://img.icons8.com/color/48/pixel-star.png" alt="star--v1" />
+                }
+                <button style="color:white; background-color:#000000" class="btn ml-4">ÚTIL</button>
+                <button style="color:white; background-color:#762929" class="btn ml-1">DENUNCIAR</button>
+            </div>
+            <h4>Opção: Vermelho Profundo</h4>
+            <h4 class="w-75">Esta análise do produto Red Squad Col-Sm-4 é totalmente genuína e imparcial. Não recebi nenhum tipo de incentivo ou pagamento dos desenvolvedores da loja para dar uma classificação de 5 estrelas. Minha experiência com o produto é verdadeira e estou compartilhando minha opinião honesta com você. Embora o dono da loja tenha oferecido incentivos, a qualidade do Red Squad é tão excepcional que merece todas as 5 estrelas!</h4>
+        </div>
+    </div>
+
+    <h1 class="text-center" style="margin-top:7vw;">NÃO SATISFEITO ?</h1>
+
+    <h3 class="text-center" style="margin-top:7vw;">CRIE SEU DESIGN</h3>
+    <img src="https://a2.cdn.japantravel.com/photo/59077-199085/738x491.8798828125!/tokyo-hunters-bar-199085.jpg" style="width:48vw; margin-left:10vw;" class="img-fluid" alt="Responsive image">
+
+    <div class="d-flex align-items-center mt-4">
+        <img class="ml-2" src="https://s2-casaejardim.glbimg.com/EenWb-46AHwMzzi84jybxZrbwFw=/0x0:1400x933/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2023/h/7/DdWRDITjKBkFGCSv2wCg/pantano-de-shrek1.jpeg" style="width:25vw; margin-left:-4vw;" class="img-fluid" alt="Responsive image">
+        <img class="ml-2" src="https://i.pinimg.com/originals/5c/61/93/5c6193f695db911ccd449f760aef3753.jpg" style="width:25vw;" class="img-fluid" alt="Responsive image">
+        <img class="ml-2" src="https://storables.com/wp-content/uploads/2019/11/decorated-walls-in-music-theme-in-living-room-interior.jpg" style="width:25vw;" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <button style="background-color:#352563; color:white; margin-left:26vw; font-size:2vw; width:16vw; margin-top:4vw; border-radius:2vw;" class="btn">CRIAR</button>
+
+    <script type="text/javascript">
+        var btnQtdMenos = document.getElementById("menosQtd");
+        var inputQtd = document.getElementById("inputQtd");
+        var btnQtdMais = document.getElementById("maisQtd");
+        btnQtdMenos.addEventListener("click", () => {
+            var currentValue = parseInt(inputQtd.value, 10);
+            if (currentValue > 1) {
+                inputQtd.value = currentValue - 1;
+            }
+        });
+
+        btnQtdMais.addEventListener("click", () => {
+            var currentValue = parseInt(inputQtd.value, 10);
+            inputQtd.value = currentValue + 1;
+        });
+    </script>
+
+    }

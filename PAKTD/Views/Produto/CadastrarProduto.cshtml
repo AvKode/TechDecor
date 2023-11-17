@@ -1,0 +1,65 @@
+﻿@model PAKTD.Models.MO.mProduto
+
+@{
+    ViewBag.Title = "CadastrarProduto";
+    Layout = "~/Views/Dashboard/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("CadastrarProduto", "Produto", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="container">
+    <h4>Cadastrar Produtos</h4>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NmPro, htmlAttributes: new { })
+        @Html.EditorFor(model => model.NmPro, new { htmlAttributes = new { @class = " @class = form-control", @placeholder = "Digite o nome do Produto" } })
+
+        @Html.ValidationMessageFor(model => model.NmPro, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.VlPro, htmlAttributes: new { })
+        @Html.EditorFor(model => model.VlPro, new { htmlAttributes = new { @class = " @class = form-control", @placeholder = "Digite o valor do Produto" } })
+
+        @Html.ValidationMessageFor(model => model.VlPro, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DsPro, htmlAttributes: new { })
+        @Html.EditorFor(model => model.DsPro, new { htmlAttributes = new { @class = " @class = form-control", @placeholder = "Digite o descrição do Produto" } })
+
+        @Html.ValidationMessageFor(model => model.DsPro, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.StaPro, htmlAttributes: new { })
+        @Html.EditorFor(model => model.StaPro, new { htmlAttributes = new { @class = " @class = form-control", @placeholder = "Digite o descrição do Produto" } })
+
+        @Html.ValidationMessageFor(model => model.StaPro, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.IdfkCate, htmlAttributes: new { })
+        @Html.EditorFor(model => model.IdfkCate, new { htmlAttributes = new { @class = " @class = form-control", @placeholder = "Digite o descrição do Produto" } })
+
+        @Html.ValidationMessageFor(model => model.IdfkCate, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Imagem do Usuário", new { @class = "control-label" })
+        <input type="file" name="fotoProduto" class="form-control" />
+    </div>
+
+    <!-- Botão de Envio -->
+    <button type="submit" class="btn btn-primary">Registrar</button>
+
+</div>
+}
+
+
