@@ -1,4 +1,5 @@
-﻿using PAKTD.Models.AC;
+﻿using MySql.Data.MySqlClient;
+using PAKTD.Models.AC;
 using PAKTD.Models.MO;
 using System;
 using System.Collections.Generic;
@@ -42,8 +43,11 @@ namespace PAKTD.Controllers
 
             aP.InserirProduto(mP);
 
+           
+
             return RedirectToAction("consultarProduto", "Produto");
         }
+
 
         public ActionResult consultarProduto()
         {
@@ -59,8 +63,7 @@ namespace PAKTD.Controllers
         }
         public ActionResult detalhesProduto(int id)
         {
-
-
+           
             return View(aP.BuscarProdCod(id));
         }
     }

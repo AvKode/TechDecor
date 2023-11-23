@@ -15,7 +15,7 @@ namespace PAKTD
                         "~/Scripts/jquery-3.7.0.js",
                         "~/Scripts/jquery-3.7.0.min.js"));
 
-           
+            bundles.Add(new ScriptBundle("~/bundles/moneymask").Include("~/Scripts/jquery.moneymask.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));

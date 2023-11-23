@@ -34,6 +34,12 @@ namespace PAKTD.Models.MO
 
         public int QuantidadeVenda { get; set; }
      
-        public int ValorTotal { get; set; }
+        public double ValorProd{ get; set; }
+
+        public double ValorTotal
+        {
+            get { return QuantidadeVenda * ValorProd; }
+        }
     }
+
 }

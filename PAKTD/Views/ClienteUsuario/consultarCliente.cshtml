@@ -37,7 +37,7 @@
                     <td>@cliente.CepCli</td>
                     <td>
 
-                        @Html.ActionLink("Editar", "alterarCliente", "ClienteUsuario", new { id = cliente.IdCli }, new { @class = "btn btn-outline-warning" })
+                        
                         @Html.ActionLink("Excluir", "excluirCliente", "ClienteUsuario", new { id = cliente.IdCli }, new { @class = "btn btn-outline-danger", @type = "button", onclick = "return confirm('Deseja realmente excluir?');" })
 
                     </td>

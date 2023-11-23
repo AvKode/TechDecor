@@ -31,7 +31,7 @@ namespace PAKTD.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpGet]
         public ActionResult BuscaProduto(string txtPesquisa)
         {
 

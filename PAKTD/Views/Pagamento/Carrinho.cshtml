@@ -21,23 +21,30 @@
         {
             <div class="d-flex">
                 <img class="mt-3" width="120" height="90" src="@itemCompra.ImgProd" />
-                <h6 class="mt-5" style="margin-left:1vw;">@itemCompra.NmPro</h6>
+                <h6 class="mt-5 text-center" style="margin-left:1vw;">@itemCompra.NmPro</h6>
 
 
-                <img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/352563/minus.png" alt="plus-math" />
-     
-                @Html.ActionLink("Remover", "RemoverCarrinho","Pagamento", new { id = itemCompra.ItemProdutoId }, new { @class = "remove-link" })
-                <img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/plus--v1.png" alt="plus--v1" />
+                <img class="mt-5" id="menosQtd" width="26" height="26" style="margin-left:1vw;cursor:pointer;" src="https://img.icons8.com/color/48/352563/minus.png" alt="minus-math" />
+
+                @Html.ActionLink("Remover", "RemoverCarrinho", "Pagamento", new { id = itemCompra.ItemProdutoId }, new { @class = "remove-link" })
+                <img class="mt-5" id="maisQtd" width="26" height="26" style="margin-left:1vw;cursor:pointer;" src="https://img.icons8.com/color/48/plus--v1.png" alt="plus--v1" />
+
+                <input type='text' id="inputQtd" disabled value="@itemCompra.QuantidadeVenda" style="width:2vw;height:1vw;margin-top:0.4vw;" class="mt-5 btn text-center" />
             </div>
 
 
 
 
-            <h5 class="text-center mt-4">Valor Total  :  R$ @itemCompra.ValorTotal</h5>
+
 
         }
+
+        <input type="hidden" id="vlTotal" value="@Model.VlCom" />
+        <h5 class="text-center mt-4"> Valor Total : <span id="spanVlTotal">@Model.VlCom.ToString("C")</span></h5>
+
+
         <div class="d-flex justify-content-center gap-2">
-            <button class="btn btn-success">Checkout</button>
+            @Html.ActionLink("Checkout", "Checkout", "Pagamento", new { @class = "btn btn-success" })
             <button class="btn btn-success" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color:#352563;">Continuar Comprando</button>
         </div>
     </div>
@@ -48,7 +55,40 @@
 
 <script>
     $(document).ready(function () {
-        // Substitua ".remove-link" pelo seletor correto se você tiver mais links com a mesma classe.
         $(".remove-link").html('<img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/000000/cancel--v1.png" alt="remove" />');
+
+        // Adicione um manipulador de eventos aos botões de aumentar e diminuir quantidade
+        $("#menosQtd, #maisQtd").click(function () {
+            atualizarValorTotal();
+        });
+    });
+
+    function atualizarValorTotal() {
+        var quantidade = parseInt($("#inputQtd").val(), 10);
+        var precoUnitario = parseFloat($("#vlTotal").val());
+        var novoValorTotal = quantidade * precoUnitario;
+     // Atualize o valor total exibido na página
+      $("#spanVlTotal").text(novoValorTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+      
+
+    }
+</script>
+
+<script type="text/javascript">
+    var btnQtdMenos = document.getElementById("menosQtd");
+    var inputQtd = document.getElementById("inputQtd");
+    var btnQtdMais = document.getElementById("maisQtd");
+
+    btnQtdMenos.addEventListener("click", () => {
+        var currentValue = parseInt(inputQtd.value, 10);
+        if (currentValue > 1) {
+            inputQtd.value = currentValue - 1;
+        }
+    });
+
+    btnQtdMais.addEventListener("click", () => {
+        var currentValue = parseInt(inputQtd.value, 10);
+        inputQtd.value = currentValue + 1;
     });
 </script>

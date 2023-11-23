@@ -40,7 +40,7 @@ namespace PAKTD.Controllers
                 }
                 else
                 {
-                    Session["usuLog"] = mC.NmCli.ToString();
+                  
                    Session["tU"] = "Cliente";
                     return RedirectToAction("Index", "Home");
                    
@@ -82,6 +82,7 @@ namespace PAKTD.Controllers
             return View(aCliUsu.BuscarCli());
         }
 
+        // Action de Excluir Cliente
         public ActionResult excluirCliente(int id)
         {
 
@@ -91,7 +92,22 @@ namespace PAKTD.Controllers
         
         }
 
-    
-        
+        // Action de Atualizar dados do Cliente (Perfil)
+       public ActionResult ClientePerfil()
+        {
+
+
+          
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ClientePerfil(int id)
+        {
+
+           
+
+            return View();
+        }
     }
 }

@@ -358,6 +358,7 @@
     <Compile Include="Models\AC\aFuncionario.cs" />
     <Compile Include="Models\AC\aPagamento.cs" />
     <Compile Include="Models\AC\aProduto.cs" />
+    <Compile Include="Models\AC\aVenda.cs" />
     <Compile Include="Models\conexao.cs" />
     <Compile Include="Models\MO\mCategoria.cs" />
     <Compile Include="Models\MO\mCliente.cs" />
@@ -811,6 +812,7 @@
     <Content Include="Views\Home\BuscaProduto.cshtml" />
     <Content Include="Views\Pagamento\GraficosVenda.cshtml" />
     <Content Include="Views\Pagamento\Carrinho.cshtml" />
+    <Content Include="Views\Pagamento\Checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

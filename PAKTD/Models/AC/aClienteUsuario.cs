@@ -91,17 +91,14 @@ namespace PAKTD.Models.AC
 
             return cliList;
         }
-        public void AlterarCli(mCliente cl, mUsuario us)
+        public void AlterarCli(mCliente cl, mUsuario us, int id)
         {
-            MySqlCommand cmd = new MySqlCommand("", con.MyConectarBD());
-            cmd.Parameters.Add("@idCli", MySqlDbType.Int16).Value = cl.IdCli;
+            MySqlCommand cmd = new MySqlCommand("call sp_UpdateCliente(@id)", con.MyConectarBD());
+            cmd.Parameters.Add("@id", MySqlDbType.Int16).Value = id;
             cmd.Parameters.Add("@nmCli", MySqlDbType.VarChar).Value = cl.NmCli;
-            cmd.Parameters.Add("@dtCli", MySqlDbType.Date).Value = cl.DtNascCli;
             cmd.Parameters.Add("@emCli", MySqlDbType.VarChar).Value = cl.EmailCli;
             cmd.Parameters.Add("@foCli", MySqlDbType.VarChar).Value = cl.FoneCli;
-            cmd.Parameters.Add("@cpfCli", MySqlDbType.VarChar).Value = cl.CpfCli;
             cmd.Parameters.Add("@cepCli", MySqlDbType.VarChar).Value = cl.CepCli;
-            cmd.Parameters.Add("@noCasa", MySqlDbType.VarChar).Value = cl.NoCasa;
             cmd.Parameters.Add("@coCasa", MySqlDbType.VarChar).Value = cl.ComCasa;
             cmd.Parameters.Add("@idUsu", MySqlDbType.Int16).Value = us.IdUsu;
             cmd.Parameters.Add("@nmUsu", MySqlDbType.VarChar).Value = us.NomeUsu;

@@ -9,6 +9,8 @@
 
 
 
+
+
 <link href="~/Style/HomeStyle/index.css" rel="stylesheet" />
 
 <div id="carouselExample" class="carousel slide">
@@ -54,10 +56,20 @@
         <div class="card" style="width: 18rem;">
             <img src="@produto.mP.ImgProd" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">@produto.mP.NmPro</h5>
+                @{
+                    var limiteCaracteres = 20;
+                    var nomeProduto = produto.mP.NmPro;
+
+                    if (nomeProduto.Length > limiteCaracteres)
+                    {
+                        nomeProduto = nomeProduto.Substring(0, limiteCaracteres) + "...";
+                    }
+                }
+                <h5 class="card-title">@nomeProduto</h5>
                 <p class="card-text">@produto.mP.DsPro</p>
                 <img src="https://static.vecteezy.com/system/resources/previews/013/743/912/original/five-stars-rating-icon-png.png" class="card-img-bt" alt="...">
-                <h5 id="inputValor" class="card-price text-center">R$ @produto.mP.VlPro</h5>
+
+                <h5 id="inputValor" class="card-price text-center"> @produto.mP.VlPro.ToString("C")</h5>
                 @Html.ActionLink("Comprar", "adicionarCarrinho", "Pagamento", new { id = produto.mP.IdPro }, new { @class = "btn btn-success" })
                 @Html.ActionLink("Detalhes", "detalhesProduto", "Produto", new { id = produto.mP.IdPro }, new { @class = "btn btn-warning" })
                 <a href="#" class="btn btn-warning">Carrinho</a>
@@ -87,7 +99,7 @@
             <div class="d-flex">
                 <img class="mt-3" width="120" height="90" src="@itemCompra.ImgProd" />
                 <h6 class="mt-5" style="margin-left:1vw;">@itemCompra.NmPro</h6>
-               
+
 
                 <img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/352563/minus.png" alt="plus-math" />
                 <img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/000000/cancel--v1.png" alt="cancel--v1" />
@@ -101,7 +113,7 @@
         <h5 class="text-center mt-4">Valor Total  :  R$ 234,90</h5>
 
         <div class="d-flex justify-content-center gap-2">
-            <button class="btn btn-success">Checkout</button>
+            @Html.ActionLink("Checkout", " Checkout", "Pagamento", new { @class = "btn btn-success" })
             <button class="btn btn-success" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color:#352563;">Continuar Comprando</button>
         </div>
     </div>

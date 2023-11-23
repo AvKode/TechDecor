@@ -12,8 +12,8 @@
 
 
 
-    @foreach (var produto in Model)
-    {
+@foreach (var produto in Model)
+{
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 offset-md-1 product-image">
@@ -31,8 +31,11 @@
                     <img style="margin-top:-0.5vw; width:35px; height:35px;" src="https://img.icons8.com/color/48/bank-card-front-side.png" alt="bank-card-front-side" />
                     <p class="product-price">no Cartão em até 12x</p>
                 </div>
-                <p class="product-price">De R$ 49.99 Sem juros</p>
-                <p class="product-price">A vista R$ 560,00</p>
+                @{
+                    double valorParcelado = produto.VlPro / 12;
+                }
+                <p class="product-price">De R$  @valorParcelado.ToString("C")   Sem juros</p>
+                <p class="product-price">A vista @produto.VlPro.ToString("C")</p>
                 <div id="QuantidadeProdDetal" style="display:flex; align-items:center; margin-top:12vw;">
                     <div id="menosQtd" class="menosQtd">
                         <button class="btn minus">
@@ -46,8 +49,11 @@
                         <button id="maisQtd" class="btn plus">
                             <img width="28" height="28" style="margin-top:-0.1vw;" src="https://img.icons8.com/color/48/plus-math.png" alt="plus-math" />
                         </button>
+
+
                     </div>
-                    <button style="background-color:#352563; color:white; margin-left:3vw; margin-top:1vw; width:12vw;" class="btn">FAZER PEDIDO</button>
+                    @Html.ActionLink("Fazer Pedido", "adicionarCarrinho", "Pagamento", new { id = produto.IdPro }, new { @class = "btn btn-success", style = "margin-left:3vw; margin-top:1vw; width:12vw; background-color:#352563; color:white;" })
+
                 </div>
             </div>
         </div>
@@ -98,7 +104,8 @@
         <img class="ml-2" src="https://storables.com/wp-content/uploads/2019/11/decorated-walls-in-music-theme-in-living-room-interior.jpg" style="width:25vw;" class="img-fluid" alt="Responsive image">
     </div>
 
-    <button style="background-color:#352563; color:white; margin-left:26vw; font-size:2vw; width:16vw; margin-top:4vw; border-radius:2vw;" class="btn">CRIAR</button>
+    <a href="@Url.Action("BuscaProduto", "Home")?txtPesquisa=" style="background-color:#352563; color:white; margin-left:26vw; font-size:2vw; width:16vw; margin-top:4vw; border-radius:2vw;" class="btn">CRIAR</a>
+
 
     <script type="text/javascript">
         var btnQtdMenos = document.getElementById("menosQtd");
@@ -117,4 +124,4 @@
         });
     </script>
 
-    }
+}

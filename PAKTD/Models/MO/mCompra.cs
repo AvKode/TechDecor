@@ -55,6 +55,7 @@ namespace PAKTD.Models.MO
         [DisplayFormat(DataFormatString = "{0:dd/MM/aaaa}")]
         public DateTime? DtReuniao { get; set; }
 
+      
         public List<mItensCompra> ItensCompra { get; set; } = new List<mItensCompra>();
 
 
