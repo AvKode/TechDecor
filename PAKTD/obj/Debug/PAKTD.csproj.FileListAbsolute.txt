@@ -912,3 +912,863 @@ C:\Users\3mod\Videos\TechDecor-main\TechDecor-main\PAKTD\bin\Microsoft.Net.Http.
 C:\Users\3mod\Videos\TechDecor-main\TechDecor-main\PAKTD\bin\Newtonsoft.Json.Bson.xml
 C:\Users\3mod\Videos\TechDecor-main\TechDecor-main\PAKTD\bin\System.Text.Encodings.Web.xml
 C:\Users\3mod\Videos\TechDecor-main\TechDecor-main\PAKTD\bin\WebActivatorEx.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\PAKTD.dll.config
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\PAKTD.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\PAKTD.pdb
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\csc.exe
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\csc.exe.config
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\csc.rsp
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\csi.exe
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\csi.exe.config
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\csi.rsp
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.AppContext.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Console.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.IO.Compression.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Net.Http.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Net.Sockets.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.ValueTuple.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Xml.XPath.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\vbc.exe
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\vbc.exe.config
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\vbc.rsp
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\VBCSCompiler.exe
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Antlr3.Runtime.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\BouncyCastle.Crypto.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\DatatableJS.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Google.Protobuf.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\K4os.Compression.LZ4.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\K4os.Hash.xxHash.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authorization.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Razor.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Routing.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.DependencyModel.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Localization.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Options.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.WebEncoders.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Win32.Registry.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\MySql.Data.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Newtonsoft.Json.Bson.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Newtonsoft.Json.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Buffers.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.ComponentModel.Annotations.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.IO.Pipelines.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Memory.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Numerics.Vectors.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Security.AccessControl.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Security.Cryptography.Xml.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Security.Permissions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Security.Principal.Windows.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Text.Encodings.Web.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Helpers.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Mvc.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Optimization.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Razor.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.WebPages.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.WebPages.Razor.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\WebActivatorEx.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\WebGrease.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\ZstdSharp.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\BouncyCastle.Crypto.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\DatatableJS.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Google.Protobuf.pdb
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Google.Protobuf.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\K4os.Compression.LZ4.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\K4os.Hash.xxHash.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authorization.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.DataProtection.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Razor.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Routing.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Localization.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Options.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Extensions.WebEncoders.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\MySql.Data.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Newtonsoft.Json.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Newtonsoft.Json.Bson.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Buffers.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.IO.Pipelines.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Memory.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Numerics.Vectors.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Text.Encodings.Web.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Helpers.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Mvc.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Optimization.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.Razor.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.WebPages.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Web.WebPages.Razor.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Antlr3.Runtime.pdb
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\obj\Debug\PAKTD.csproj.AssemblyReference.cache
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\obj\Debug\PAKTD.csproj.CoreCompileInputs.cache
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\obj\Debug\PAKTD.csproj.CopyComplete
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\obj\Debug\PAKTD.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\obj\Debug\PAKTD.pdb
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Net.Http.Formatting.dll
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\Newtonsoft.Json.Bson.pdb
+C:\Users\odama\Videos\tcc asp\TechDecor\PAKTD\bin\System.Net.Http.Formatting.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\PAKTD.dll.config
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\PAKTD.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\PAKTD.pdb
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\csc.exe
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\csc.exe.config
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\csc.rsp
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\csi.exe
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\csi.exe.config
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\csi.rsp
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.AppContext.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Console.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.IO.Compression.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Net.Http.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Net.Sockets.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.ValueTuple.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Xml.XPath.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\vbc.exe
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\vbc.exe.config
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\vbc.rsp
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\VBCSCompiler.exe
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Antlr3.Runtime.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\BouncyCastle.Crypto.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\DatatableJS.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Google.Protobuf.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\K4os.Compression.LZ4.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\K4os.Hash.xxHash.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Razor.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.DependencyModel.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Localization.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Options.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.WebEncoders.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Win32.Registry.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\MySql.Data.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Newtonsoft.Json.Bson.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Newtonsoft.Json.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Buffers.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.ComponentModel.Annotations.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.IO.Pipelines.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Memory.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Net.Http.Formatting.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Numerics.Vectors.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Security.AccessControl.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Security.Cryptography.Xml.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Security.Permissions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Security.Principal.Windows.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Text.Encodings.Web.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Helpers.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Mvc.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Optimization.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Razor.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.WebPages.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.WebPages.Razor.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\WebActivatorEx.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\WebGrease.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\ZstdSharp.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\BouncyCastle.Crypto.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\DatatableJS.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Google.Protobuf.pdb
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Google.Protobuf.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\K4os.Compression.LZ4.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\K4os.Hash.xxHash.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Razor.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Localization.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Options.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Extensions.WebEncoders.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\MySql.Data.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Newtonsoft.Json.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Newtonsoft.Json.Bson.pdb
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Newtonsoft.Json.Bson.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Buffers.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.IO.Pipelines.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Memory.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Net.Http.Formatting.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Numerics.Vectors.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Text.Encodings.Web.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Helpers.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Mvc.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Razor.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.WebPages.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.WebPages.Razor.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\System.Web.Optimization.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Antlr3.Runtime.pdb
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\obj\Debug\PAKTD.csproj.AssemblyReference.cache
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\obj\Debug\PAKTD.csproj.CoreCompileInputs.cache
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\obj\Debug\PAKTD.csproj.CopyComplete
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\obj\Debug\PAKTD.dll
+C:\Users\odama\OneDrive\Imagens\fsdfsdfsdfsdfssfsd\Nova pasta\Teste\PAKTD\obj\Debug\PAKTD.pdb
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\PAKTD.dll.config
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\PAKTD.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\PAKTD.pdb
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\csc.exe
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\csc.exe.config
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\csc.rsp
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\csi.exe
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\csi.exe.config
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\csi.rsp
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.AppContext.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Console.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.IO.Compression.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Net.Http.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Net.Sockets.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.ValueTuple.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Xml.XPath.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\vbc.exe
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\vbc.exe.config
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\vbc.rsp
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\VBCSCompiler.exe
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Antlr3.Runtime.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\BouncyCastle.Crypto.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\DatatableJS.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Google.Protobuf.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\K4os.Compression.LZ4.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\K4os.Hash.xxHash.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Razor.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.DependencyModel.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Localization.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Options.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.WebEncoders.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Win32.Registry.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\MySql.Data.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Newtonsoft.Json.Bson.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Newtonsoft.Json.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Buffers.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.ComponentModel.Annotations.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.IO.Pipelines.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Memory.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Net.Http.Formatting.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Numerics.Vectors.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Security.AccessControl.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Security.Cryptography.Xml.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Security.Permissions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Security.Principal.Windows.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Text.Encodings.Web.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Helpers.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Mvc.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Optimization.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Razor.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.WebPages.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.WebPages.Razor.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\WebActivatorEx.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\WebGrease.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\ZstdSharp.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\BouncyCastle.Crypto.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\DatatableJS.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Google.Protobuf.pdb
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Google.Protobuf.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\K4os.Compression.LZ4.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\K4os.Hash.xxHash.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Razor.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Localization.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Options.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Extensions.WebEncoders.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\MySql.Data.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Newtonsoft.Json.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Newtonsoft.Json.Bson.pdb
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Newtonsoft.Json.Bson.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Buffers.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.IO.Pipelines.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Memory.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Net.Http.Formatting.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Numerics.Vectors.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Text.Encodings.Web.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Helpers.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Mvc.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Razor.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.WebPages.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.WebPages.Razor.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\System.Web.Optimization.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Antlr3.Runtime.pdb
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\obj\Debug\PAKTD.csproj.AssemblyReference.cache
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\obj\Debug\PAKTD.csproj.CoreCompileInputs.cache
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\obj\Debug\PAKTD.csproj.CopyComplete
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\obj\Debug\PAKTD.dll
+C:\Users\3mod\Pictures\mito\Teste\PAKTD\obj\Debug\PAKTD.pdb
+D:\0\ASP\Teste\PAKTD\bin\PAKTD.dll.config
+D:\0\ASP\Teste\PAKTD\bin\PAKTD.dll
+D:\0\ASP\Teste\PAKTD\bin\PAKTD.pdb
+D:\0\ASP\Teste\PAKTD\bin\roslyn\csc.exe
+D:\0\ASP\Teste\PAKTD\bin\roslyn\csc.exe.config
+D:\0\ASP\Teste\PAKTD\bin\roslyn\csc.rsp
+D:\0\ASP\Teste\PAKTD\bin\roslyn\csi.exe
+D:\0\ASP\Teste\PAKTD\bin\roslyn\csi.exe.config
+D:\0\ASP\Teste\PAKTD\bin\roslyn\csi.rsp
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.Managed.Core.targets
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\0\ASP\Teste\PAKTD\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.AppContext.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Collections.Immutable.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Console.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Globalization.Calendars.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.IO.Compression.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.IO.FileSystem.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Net.Http.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Net.Sockets.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Reflection.Metadata.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.ValueTuple.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Xml.XmlDocument.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Xml.XPath.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\0\ASP\Teste\PAKTD\bin\roslyn\vbc.exe
+D:\0\ASP\Teste\PAKTD\bin\roslyn\vbc.exe.config
+D:\0\ASP\Teste\PAKTD\bin\roslyn\vbc.rsp
+D:\0\ASP\Teste\PAKTD\bin\roslyn\VBCSCompiler.exe
+D:\0\ASP\Teste\PAKTD\bin\roslyn\VBCSCompiler.exe.config
+D:\0\ASP\Teste\PAKTD\bin\Antlr3.Runtime.dll
+D:\0\ASP\Teste\PAKTD\bin\BouncyCastle.Crypto.dll
+D:\0\ASP\Teste\PAKTD\bin\DatatableJS.dll
+D:\0\ASP\Teste\PAKTD\bin\Google.Protobuf.dll
+D:\0\ASP\Teste\PAKTD\bin\K4os.Compression.LZ4.dll
+D:\0\ASP\Teste\PAKTD\bin\K4os.Compression.LZ4.Streams.dll
+D:\0\ASP\Teste\PAKTD\bin\K4os.Hash.xxHash.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Razor.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.DotNet.PlatformAbstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.DependencyModel.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Localization.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.ObjectPool.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Options.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Primitives.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.WebEncoders.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Net.Http.Headers.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Web.Infrastructure.dll
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Win32.Registry.dll
+D:\0\ASP\Teste\PAKTD\bin\MySql.Data.dll
+D:\0\ASP\Teste\PAKTD\bin\Newtonsoft.Json.Bson.dll
+D:\0\ASP\Teste\PAKTD\bin\Newtonsoft.Json.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Buffers.dll
+D:\0\ASP\Teste\PAKTD\bin\System.ComponentModel.Annotations.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Configuration.ConfigurationManager.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Diagnostics.DiagnosticSource.dll
+D:\0\ASP\Teste\PAKTD\bin\System.IO.Pipelines.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Memory.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Net.Http.Formatting.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Numerics.Vectors.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Security.AccessControl.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Security.Cryptography.Xml.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Security.Permissions.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Security.Principal.Windows.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Text.Encodings.Web.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Threading.Tasks.Extensions.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Helpers.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Mvc.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Optimization.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Razor.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Web.WebPages.Deployment.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Web.WebPages.dll
+D:\0\ASP\Teste\PAKTD\bin\System.Web.WebPages.Razor.dll
+D:\0\ASP\Teste\PAKTD\bin\WebActivatorEx.dll
+D:\0\ASP\Teste\PAKTD\bin\WebGrease.dll
+D:\0\ASP\Teste\PAKTD\bin\ZstdSharp.dll
+D:\0\ASP\Teste\PAKTD\bin\BouncyCastle.Crypto.xml
+D:\0\ASP\Teste\PAKTD\bin\DatatableJS.xml
+D:\0\ASP\Teste\PAKTD\bin\Google.Protobuf.pdb
+D:\0\ASP\Teste\PAKTD\bin\Google.Protobuf.xml
+D:\0\ASP\Teste\PAKTD\bin\K4os.Compression.LZ4.xml
+D:\0\ASP\Teste\PAKTD\bin\K4os.Compression.LZ4.Streams.xml
+D:\0\ASP\Teste\PAKTD\bin\K4os.Hash.xxHash.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Antiforgery.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authentication.Core.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Html.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.JsonPatch.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Core.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Razor.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Localization.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Localization.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.ObjectPool.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Options.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.Primitives.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Extensions.WebEncoders.xml
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.Net.Http.Headers.xml
+D:\0\ASP\Teste\PAKTD\bin\MySql.Data.xml
+D:\0\ASP\Teste\PAKTD\bin\Newtonsoft.Json.xml
+D:\0\ASP\Teste\PAKTD\bin\Newtonsoft.Json.Bson.pdb
+D:\0\ASP\Teste\PAKTD\bin\Newtonsoft.Json.Bson.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Buffers.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Diagnostics.DiagnosticSource.xml
+D:\0\ASP\Teste\PAKTD\bin\System.IO.Pipelines.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Memory.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Net.Http.Formatting.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Numerics.Vectors.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Text.Encodings.Web.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Threading.Tasks.Extensions.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Helpers.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Mvc.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Razor.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Web.WebPages.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Web.WebPages.Deployment.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Web.WebPages.Razor.xml
+D:\0\ASP\Teste\PAKTD\bin\System.Web.Optimization.xml
+D:\0\ASP\Teste\PAKTD\bin\Antlr3.Runtime.pdb
+D:\0\ASP\Teste\PAKTD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\0\ASP\Teste\PAKTD\bin\pt-br\System.Web.Helpers.resources.dll
+D:\0\ASP\Teste\PAKTD\bin\pt-br\System.Web.Mvc.resources.dll
+D:\0\ASP\Teste\PAKTD\bin\pt-br\System.Web.Razor.resources.dll
+D:\0\ASP\Teste\PAKTD\bin\pt-br\System.Web.WebPages.resources.dll
+D:\0\ASP\Teste\PAKTD\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+D:\0\ASP\Teste\PAKTD\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+D:\0\ASP\Teste\PAKTD\bin\pt-br\System.Web.Optimization.resources.dll
+D:\0\ASP\Teste\PAKTD\obj\Debug\PAKTD.csproj.AssemblyReference.cache
+D:\0\ASP\Teste\PAKTD\obj\Debug\PAKTD.csproj.CoreCompileInputs.cache
+D:\0\ASP\Teste\PAKTD\obj\Debug\PAKTD.csproj.CopyComplete
+D:\0\ASP\Teste\PAKTD\obj\Debug\PAKTD.dll
+D:\0\ASP\Teste\PAKTD\obj\Debug\PAKTD.pdb

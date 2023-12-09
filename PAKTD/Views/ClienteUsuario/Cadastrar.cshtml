@@ -4,14 +4,15 @@
     ViewBag.Title = "Cadastrar";
 }
 
-<h2>Cadastrar </h2>
+<link href="~/Style/UsuarioStyle/UsuCad.css" rel="stylesheet" />
+
+
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>mCliente</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
@@ -105,12 +106,18 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Cadastrar" class="btn btn-success cad" />
+            </div>
+        </div>
+        <p>Ou</p>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a href="ClienteUsuario/Logar"><input type="button" value="Entrar" class="btn btn-success ent" /></a>
             </div>
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+<div class="backA">
+    @Html.ActionLink("Voltar Para o Início", "Index")
 </div>

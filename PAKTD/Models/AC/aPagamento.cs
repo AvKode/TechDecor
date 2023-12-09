@@ -54,6 +54,18 @@ namespace PAKTD.Models.AC
             con.MyDesConectarBD();
         }
 
-     
+        public void InserirCompra(mCompra mC)
+        {
+            MySqlCommand cmd = new MySqlCommand("call InserirCarrinho(@fkCliente,@fkPagamento, @valorCompra,@dataCompra,@dataServico)", con.MyConectarBD());
+            cmd.Parameters.AddWithValue("@fkCliente", mC.IdfkCli);
+            cmd.Parameters.AddWithValue("@fkPagamento", mC.IdfkPag);
+            cmd.Parameters.AddWithValue("@valorCompra", mC.VlCom);
+            cmd.Parameters.AddWithValue("@dataCompra", mC.DtCompra);
+            cmd.Parameters.AddWithValue("@dataServico", mC.DtServico);
+            cmd.ExecuteNonQuery();
+            con.MyDesConectarBD();
+        }
+
+
     }
 }

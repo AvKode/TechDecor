@@ -19,7 +19,12 @@
 
 
     <link href="~/Content/style.css" rel="stylesheet" />
-
+    <style>
+        button.btn.btn-primary.sir {
+            background-color: #00763e;
+            margin-top: 3vw;
+        }
+    </style>
 </head>
 <body>
 
@@ -87,7 +92,7 @@
                                 @Html.ActionLink("Cadastrar Produtos", "cadastrarProduto", "Produto", new { area = "" }, new { @class = "nav-link" })
                             </li>
                             <li>
-                                <a href="#">Consultar</a>
+                                @Html.ActionLink("Consultar", "consultarProduto", "Produto", new { area = "" }, new { @class = "nav-link" })
                             </li>
 
                         </ul>
@@ -129,7 +134,7 @@
 
                 </ul>
                
-                <div class="dropdown pb-4">
+                <div class="pb-4">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="~/Imagens/profile.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
                         @if (Session["tU"].ToString() == "Administrador")
@@ -143,15 +148,28 @@
 
                         }
                     </a>
-                    <ul class="dropdown dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
+                    <button type="button" class="btn btn-primary sir" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Sair
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sair</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h1>Tem certeza que deseja sair?</h1>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <a href="/ClienteUsuario/Sair"><button type="button" class="btn btn-primary">Sim</button></a>
+</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 

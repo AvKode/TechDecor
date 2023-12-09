@@ -39,8 +39,8 @@ namespace PAKTD.Controllers
 
         public ActionResult alterarFuncionario(int id)
         {
-            aF.BuscarFuncionarioCod(id);
-            return View();
+        
+            return View(aF.BuscarFuncionarioCod(id));
 
         }
         [HttpPost]

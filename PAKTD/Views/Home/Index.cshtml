@@ -1,61 +1,76 @@
-﻿@model  IEnumerable<PAKTD.Models.MO.vmCompraItensProd>
+﻿@model IEnumerable<PAKTD.Models.MO.vmCompraItensProd>
 
 @{
     ViewBag.Title = "Home Page";
+    int id = 0;
 }
 
-<h1>@Session["tU"]</h1>
+<link href="~/Style/HomeStyle/index2.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+<style>
+    .diamante {
+        margin-left: 7.5vw;
+        width: 0;
+        height: 0;
+        border: 25px solid transparent;
+        border-bottom-color: rgba(0, 191, 99, 1);
+        position: relative;
+        top: -25px;
+    }
 
+        .diamante:after {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 25px;
+            width: 0;
+            height: 0;
+            border: 25px solid transparent;
+            border-top-color: rgba(0, 191, 99, 1);
+        }
+</style>
 
-
-
-
-<link href="~/Style/HomeStyle/index.css" rel="stylesheet" />
-
-<div id="carouselExample" class="carousel slide">
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://casacor.abril.com.br/wp-content/uploads/sites/7/2023/04/casa-fachada-tijolinhos-ampla-area-receber-convidados-14.jpg?quality=90&strip=info" class="d-block w-100" alt="...">
+            <img src="~/Imagens/20231207_1934401.gif" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-            <img src="https://blog.daico.com.br/wp-content/uploads/2021/08/dicas-estilos-decoracoes-comodos-casa-990x550.png" class="d-block w-100" alt="...">
+            <img src="~/Imagens/ROCK.gif" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-            <img src="https://www.homeit.com.br/wp-content/uploads/2023/02/acabar-com-sensacao-de-aperto-em-casa-pequena-dicas-1200x900.jpg" class="d-block w-100" alt="...">
+            <img src="~/Imagens/VINTAGE.gif" class="d-block w-100" alt="..." />
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
 
-
-<div class="img-DivSecond">
-    <img src="https://casacor.abril.com.br/wp-content/uploads/sites/7/2023/04/casa-fachada-tijolinhos-ampla-area-receber-convidados-14.jpg?quality=90&strip=info" class="img-second1" />
-    <img src="https://blog.daico.com.br/wp-content/uploads/2021/08/dicas-estilos-decoracoes-comodos-casa-990x550.png" class="img-second2" />
-    <img src="https://www.homeit.com.br/wp-content/uploads/2023/02/acabar-com-sensacao-de-aperto-em-casa-pequena-dicas-1200x900.jpg" class="img-second3" />
+<div class="img-cashback">
+    <img src="~/Imagens/Cashback Slide PNG Crop.png" class="img-cash" />
 </div>
 
-<h1 class="prod-title">Nossos Produtos</h1>
-
-
-
-<div class="sec-prod">
-
-
-    @foreach (var produto in Model.Take(4))
-
-    {
-
-        <div class="card" style="width: 18rem;">
-            <img src="@produto.mP.ImgProd" class="card-img-top" alt="...">
-            <div class="card-body">
+<div class="dest-div">
+    <br /><br />
+    <h1 class="prod-title"> DESTAQUES</h1>
+    <img class="img-dest" src="~/Imagens/logoTD-bg.png" />
+    <div class="dest-subdiv">
+        @foreach (var produto in Model.Take(3))
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="@produto.mP.ImgProd" class="card-img-top" alt="...">
                 @{
                     var limiteCaracteres = 20;
                     var nomeProduto = produto.mP.NmPro;
@@ -65,59 +80,140 @@
                         nomeProduto = nomeProduto.Substring(0, limiteCaracteres) + "...";
                     }
                 }
-                <h5 class="card-title">@nomeProduto</h5>
-                <p class="card-text">@produto.mP.DsPro</p>
-                <img src="https://static.vecteezy.com/system/resources/previews/013/743/912/original/five-stars-rating-icon-png.png" class="card-img-bt" alt="...">
-
-                <h5 id="inputValor" class="card-price text-center"> @produto.mP.VlPro.ToString("C")</h5>
-                @Html.ActionLink("Comprar", "adicionarCarrinho", "Pagamento", new { id = produto.mP.IdPro }, new { @class = "btn btn-success" })
-                @Html.ActionLink("Detalhes", "detalhesProduto", "Produto", new { id = produto.mP.IdPro }, new { @class = "btn btn-warning" })
-                <a href="#" class="btn btn-warning">Carrinho</a>
+                <div class="card-body">
+                    <h5 class="card-title">@nomeProduto</h5>
+                    <h5 id="inputValor" class="card-price text-center">@produto.mP.VlPro.ToString("C")</h5>
+                    @Html.ActionLink("Comprar", "adicionarCarrinho", "Pagamento", new { id = produto.mP.IdPro }, new { @class = "btn btn-success plns" })
+                    @Html.ActionLink("Detalhes", "detalhesProduto", "Produto", new { id = produto.mP.IdPro }, new { @class = "btn btn-success plns" })
+                </div>
             </div>
-        </div>
-
-    }
-
-
-
-
-
-</div>
-
-<!--OFFCANVAS (Carrinho)-->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color:#000000;color:white;">
-    <div class="offcanvas-header">
-
-
-    </div>
-
-
-    <div class="offcanvas-body">
-        <h4 class="text-center">CARRINHO</h4>
-        @foreach (var itemCompra in Model.SelectMany(vm => vm.mC.ItensCompra))
-        {
-            <div class="d-flex">
-                <img class="mt-3" width="120" height="90" src="@itemCompra.ImgProd" />
-                <h6 class="mt-5" style="margin-left:1vw;">@itemCompra.NmPro</h6>
-
-
-                <img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/352563/minus.png" alt="plus-math" />
-                <img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/000000/cancel--v1.png" alt="cancel--v1" />
-                <img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/plus--v1.png" alt="plus--v1" />
-            </div>
-
-
         }
+    </div>
+</div>
+<div class="planos-div">
+    <h1 class="prod-title">VSTUDIO Planos</h1>
+    <div class="planos-subdiv">
+        @foreach (var plano in Model.FirstOrDefault()?.mPL.GroupBy(p => p.IdPlano))
+        {
+            var primeiroPlano = plano.FirstOrDefault();
 
+            id++;
+            if (primeiroPlano != null)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img src="@primeiroPlano.ImgPlano" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@primeiroPlano.NmPlano</h5>
+                        <a data-bs-toggle="collapse" href="#collapsePlano_@id" role="button" aria-expanded="false" aria-controls="collapsePlano_@id">
+                            <div id="diamante_@id" class="diamante"></div>
+                        </a>
 
-        <h5 class="text-center mt-4">Valor Total  :  R$ 234,90</h5>
+                        <hr class="hr-plns" />
+                        <h5 class="card-title plns">CONTÉM:</h5>
+                        <div id="collapsePlano_@id" class="collapse">
+                            @foreach (var produto in plano)
+                            {
+                                <h5 class="card-price text-center">@produto.NmPro</h5>
+                                @Html.ActionLink("Comprar", "adicionarCarrinho", "Pagamento", new { id = produto.IdPro }, new { @class = "btn btn-success plns" })
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
 
+<div class="ng-div">
+    <h1 class="ng-h1">NÃO GOSTOU? MONTE O SEU</h1>
+    <div class="btn-ng-div">
+        <a href="@Url.Action("BuscaProduto", "Home")?txtPesquisa="" class="btn btn-success ng">CLIQUE AQUI!</a>
+    </div>
+</div>
+<!-- OFFCANVAS (Carrinho) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color:#000000;color:white;">
+    <div class="offcanvas-header"></div>
+    <div class="offcanvas-body">
+        <h4 class="text-center"> CARRINHO</h4>
+        @foreach (var itemCompra in Model.Take(1))
+        {
+            foreach (var item in itemCompra.Carrinho.ItensCompra)
+            {
+                <div class="d-flex">
+                    <img class="mt-3" width="120" height="90" src="@item.ImgProd" />
+                    <h6 class="mt-5 text-center" style="margin-left:1vw;">@item.NmPro </h6>
+                    <img class="mt-5 menosQtd" width="26" height="26" style="margin-left:1vw;cursor:pointer;" src="https://img.icons8.com/color/48/352563/minus.png" alt="minus-math" />
+                    @Html.ActionLink("Remover", "RemoverCarrinho", "Pagamento", new { id = item.ItemProdutoId }, new { @class = "remove-link" })
+                    <img class="mt-5 maisQtd" width="26" height="26" style="margin-left:1vw;cursor:pointer;" src="https://img.icons8.com/color/48/plus--v1.png" alt="plus--v1" />
+                    <input type='text' id="inputQtd" disabled value="@item.QuantidadeVenda" style="width:2vw;height:1vw;margin-top:0.4vw;" class="mt-5 btn text-center" />
+                </div>
+            }
+            <input type="hidden" id="vlTotal" value="@itemCompra.Carrinho.VlCom" />
+            <h5 class="text-center mt-4"> Valor Total : <span id="spanVlTotal">@itemCompra.Carrinho.VlCom.ToString("C") </span> </h5>
+        }
         <div class="d-flex justify-content-center gap-2">
-            @Html.ActionLink("Checkout", " Checkout", "Pagamento", new { @class = "btn btn-success" })
-            <button class="btn btn-success" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color:#352563;">Continuar Comprando</button>
+            @Html.ActionLink("Checkout", "Checkout", "Pagamento", null, new { @class = "btn btn-success" })
+            <button class="btn btn-success" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color:#352563;"> Continuar Comprando</button>
         </div>
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".remove-link").html('<img class="mt-5" width="26" height="26" style="margin-left:1vw;" src="https://img.icons8.com/color/48/000000/cancel--v1.png" alt="remove" />');
+
+        $(".menosQtd, .maisQtd").click(function () {
+            atualizarValorTotal();
+        });
+    });
+
+    function atualizarValorTotal() {
+        var quantidade = parseInt($("#inputQtd").val(), 10);
+        var precoUnitario = parseFloat($("#vlTotal").val());
+        var novoValorTotal = quantidade * precoUnitario;
+        $("#spanVlTotal").text(novoValorTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    }
+</script>
+<script>
+    $(document).ready(function () {
 
 
+        $(".menosQtd").click(function () {
+            atualizarQuantidade(this, -1);
+        });
+
+        $(".maisQtd").click(function () {
+            atualizarQuantidade(this, 1);
+        });
+
+        function atualizarQuantidade(element, incremento) {
+            var container = $(element).closest(".d-flex");
+            var inputQtd = container.find("#inputQtd");
+            var currentValue = parseInt(inputQtd.val(), 10);
+
+
+            if (currentValue + incremento >= 1) {
+                inputQtd.val(currentValue + incremento);
+                atualizarValorTotal($(element));
+            }
+        }
+    });
+</script>
+
+<script>
+    var diamanteElements = document.querySelectorAll(".diamante");
+
+    diamanteElements.forEach(function (diamanteDiv) {
+        diamanteDiv.addEventListener("click", function () {
+            diamanteDiv.classList.remove("animate__animated");
+            diamanteDiv.classList.remove("animate__pulse");
+
+            setTimeout(function () {
+                diamanteDiv.classList.add("animate__animated");
+                diamanteDiv.classList.add("animate__pulse");
+            }, 10);
+        });
+    });
+</script>

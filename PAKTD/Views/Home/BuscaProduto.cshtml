@@ -6,7 +6,7 @@
 }
 
 <div class="container mt-4">
-  
+
     <div class="row">
 
         @if (Model != null)
@@ -20,8 +20,9 @@
                         <img src="@produto.ImgProd" style="width:100%; height:20vw;" class="card-img-top" alt="Produto 1">
                         <div class="card-body">
                             <h5 class="card-title">@produto.NmPro</h5>
-                            <p class="card-text">@produto.VlPro</p>
-                            <a href="#" class="btn btn-success">Detalhes</a>
+                            <p class="card-text">@produto.VlPro.ToString("C")</p>
+                            @Html.ActionLink("Comprar", "adicionarCarrinho", "Pagamento", new { id = produto.IdPro }, new { @class = "btn btn-success " })
+                            @Html.ActionLink("Detalhes", "detalhesProduto", "Produto", new { id = produto.IdPro }, new { @class = "btn btn-success " })
                         </div>
                     </div>
                 </div>
@@ -33,7 +34,7 @@
         {
             <h3 class="text-center">Nenhum Produto Encontrado :(</h3>
         }
-      
+
     </div>
 </div>
 

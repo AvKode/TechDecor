@@ -12,16 +12,27 @@ namespace PAKTD.Controllers
     {
 
         aProduto aP = new aProduto();
+        aPlano aPL = new aPlano();
         public ActionResult Index()
         {
             mCompra carrinho = Session["Carrinho"] != null ? (mCompra)Session["Carrinho"] : new mCompra();
+            List<vmCompraItensProd> listaDeProdutos = aP.BuscarProd();
+            List<mPlano> listaPlanos = aPL.BuscarPlanos();
+            List <vmCompraItensProd> listaDeProdutosECarrinho = listaDeProdutos
+              .Select(p => new vmCompraItensProd { mP = p.mP, Carrinho = carrinho,mPL = listaPlanos })
+              .ToList();
 
-        
-          
 
-            return View(aP.BuscarProd());
-          
+            double valorTotal = carrinho.ItensCompra.Sum(item => item.QuantidadeVenda * item.ValorProd);
+
+            carrinho.VlCom = valorTotal;
+
+            return View(listaDeProdutosECarrinho);
         }
+
+
+
+
 
 
         public ActionResult BuscaProduto()
@@ -38,6 +49,6 @@ namespace PAKTD.Controllers
 
             return View(aP.PesquisaProduto(txtPesquisa));
         }
-
+       
     }  
 }

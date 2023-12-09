@@ -18,12 +18,12 @@ namespace PAKTD.Models.MO
         //-----------------------------------------//
 
         [DisplayName("Cliente")]
-        public string IdfkCli { get; set; }
+        public int IdfkCli { get; set; }
 
         //-----------------------------------------//
 
         [DisplayName("Tipo de Pagamento")]
-        public string IdfkPag { get; set; }
+        public int IdfkPag { get; set; }
 
         //-----------------------------------------//
 

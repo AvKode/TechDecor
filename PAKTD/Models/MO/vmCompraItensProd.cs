@@ -11,5 +11,7 @@ namespace PAKTD.Models.MO
         public mProduto mP { get; set; }
         public mCompra mC { get; set; }
         public mCompra Carrinho { get; set; }
+
+        public List<mPlano> mPL { get; set; }
     }
 }

@@ -572,4 +572,3 @@ update tbl_Pagamento
 set ds_Pagamento = p_dsPagamento where id_Pagamento = p_idPagamento;
 end $$
 delimiter ;
-

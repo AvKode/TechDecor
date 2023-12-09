@@ -10,15 +10,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link href="~/Style/Responsividade/resp.css" rel="stylesheet" />
     <style>
+
         * {
             font-family: 'Inter', sans-serif;
+           
+        }
+        html {
+            overflow-x: hidden;
+        }
+        footer.text-light {
+            padding: 46px;
+        }
+
+        p.pFooter {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        p.pFooter {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        h4.hFooter {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        img.img-rs-footer {
+            width: 44px;
+            padding: 7px;
+        }
+
+        img.img-rs-fcb-footer {
+            width: 36.3px;
+            padding: 7px;
+        }
+
+        img.img-cs-footer {
+            width: 20vw;
+            margin-top: 2vw;
+        }
+
+        .img-sg {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        img.img-fpg-footer {
+            width: 4vw;
+            border-radius: 32px;
+            padding: 7px;
+        }
+
+        img.img-fpg-elo-footer {
+            width: 6vw;
+            border-radius: 32px;
+        }
+
+        .img-fpg {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .col-md-6.fpg {
+            margin-top: 5vw;
+            display: block;
+        }
+
+        .img-cs {
+            display: flex;
+            justify-content: center;
+        }
+
+        .col-md-6.rs {
+            margin-top: 2vw;
+        }
+
+        .fpg {
+            display: flex;
+            justify-content: center;
+        }
+
+        p.pFooterCopy {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 83px;
+        }
+
+        .container.footer {
+            margin-top: 30px;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark" style="background-color: black;">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark" style="background-color: black !important;">
         <div class="container">
             @Html.ActionLink("TechDecor", "Index", "Home", null, new { style = "color:#24cc7b;", @class = "navbar-brand" })
 
@@ -29,12 +125,15 @@
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
 
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Página Inicial", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
 
+                    @if (Session["tU"] != null && Session["tU"].ToString() == "Administrador")
+                    {
+                        <li>@Html.ActionLink("Dashboard", "Index", "Dashboard", new { area = "" }, new { @class = "nav-link" })</li>
 
-                    <li>@Html.ActionLink("Dashboard", "Index", "Dashboard", new { area = "" }, new { @class = "nav-link" })</li>
+                    }
 
-                    <li>@Html.ActionLink("Login", "Logar", "ClienteUsuario", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Cadastre-se", "Cadastrar", "ClienteUsuario", new { area = "" }, new { @class = "nav-link" })</li>
 
 
 
@@ -58,22 +157,98 @@
             }
         </div>
 
-        <div class="mr-4" style="margin-right:1.5vw;">
-            <p data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <img width="34" height="34" src="https://img.icons8.com/pastel-glyph/64/24cc7b/shopping-cart--v1.png" alt="shopping-cart" /></p>
+        <div class="row justify-content-center" style="margin-right: 2vw; margin-top: 20px;width:45vw">
+            <div class="col-2 mr-3 mb-3">
+                <p data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img width="40" height="40" style="margin-right: 5vw !important" src="https://img.icons8.com/pastel-glyph/64/24cc7b/shopping-cart--v1.png" alt="shopping-cart" />
+                </p>
+            </div>
+
+            @if (Session["usuId"] != null)
+            {
+                <div class="col-2 mr-3 mb-3">
+                    <a href="@Url.Action("ClientePerfil", "ClienteUsuario")">
+                        <img width="40" height="40" src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/24cc7b/external-user-web-programming-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" alt="external-user-web-programming-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto" />
+                    </a>
+                </div>
+
+                <div class="col-2 mr-3 mb-3">
+                    <a href="@Url.Action("Sair", "ClienteUsuario")">
+                        <img width="40" height="40" style="margin-right: 5vw !important" src="https://img.icons8.com/metro/64/24cc7b/exit.png" alt="Ícone de Sair">
+                    </a>
+                </div>
+            }
+          else
+            {
+        <div class="col-2 mr-3 mb-3">
+            <a href="@Url.Action("Logar", "ClienteUsuario")">
+                <img width="40" height="40" style="margin-right: 5vw !important" src="https://img.icons8.com/parakeet-line/64/24cc7b/user-credentials.png" alt="user-credentials">
+            </a>
+        </div>
+            }
         </div>
 
-        <div class="mr-4" style="margin-right:4vw;">
-            <img width="34" height="34" src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/24cc7b/external-user-web-programming-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" alt="external-user-web-programming-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto" />
-        </div>
+
+
     </nav>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
+        <div id="body">
+            @RenderBody()
+        </div>
+       <hr />
+            <footer class="text-light">
+                <div class="container footer">
+                    <div class="row">
+                        <div class="col-md-4 sbn">
+                            <h4 class="hFooter">INSTITUCIONAL</h4>
+                            <p class="pFooter">Sobre Nós</p>
+                            <p class="pFooter">Meus Pedidos</p>
+                            <p class="pFooter">Apresentação</p>
+                        </div>
+                        <div class="col-md-4 sbn">
+                            <h4 class="hFooter">INFORMAÇÕES DA LOJA</h4>
+                            <p class="pFooter">Atendimento</p>
+                            <p class="pFooter">Políticas de Privacidade</p>
+                            <p class="pFooter">Nossas Lojas</p>
+                        </div>
+                        <div class="col-md-4 sbn">
+                            <h4 class="hFooter">ATENDIMENTO</h4>
+                            <p class="pFooter">E-mail</p>
+                            <p class="pFooter">Sac</p>
+                            <p class="pFooter">Lojas</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6 rs">
+                            <h4 class="hFooter">SIGA NAS REDES</h4>
+                            <div class="img-sg">
+                                <img class="img-rs-fcb-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" />
+                                <img class="img-rs-footer" src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" />
+                                <img class="img-rs-footer" src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-cs">
+                                <img class="img-cs-footer" src="https://cdn.shopify.com/s/files/1/0561/1615/0447/files/SITE-SEGURO_2048x2048.png?v=1619621033" />
+                            </div>
+                        </div>
+                        <div class="fpg">
+                            <div class="col-md-6 fpg">
+                                <h4 class="hFooter">FORMAS DE PAGAMENTO</h4>
+                                <div class="img-fpg">
+                                    <img class="img-fpg-footer" src="https://www.mastercard.com/content/dam/public/mastercardcom/br/pt/logos/mastercard-og-image.png" />
+                                    <img class="img-fpg-footer" src="https://play-lh.googleusercontent.com/lKebetEHVDuBrbq5KJJ4MK6V6BaFuo0Mj9Qy9YZkoenrEDZVU-IzLrbAuoKMaCT4nA" />
+                                    <img class="img-fpg-elo-footer" src="https://neofeed.com.br/wp-content/uploads/2021/04/Elo-1.jpg" />
+                                    <img class="img-fpg-footer" src="https://www.dsgadvogados.com.br/wp-content/uploads/2017/02/boleto-banc%C3%A1rio-aliexpress.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <p class="pFooterCopy"> TECHDECOR LTDA &copy; @DateTime.Now.Year - Todos os direitos reservados. | CNPJ: 18.333.911/0001-04</p>
+                    </div>
         </footer>
     </div>
-
+   
     @Scripts.Render("~/bundles/jquery")
   
     @Scripts.Render("~/bundles/bootstrap")

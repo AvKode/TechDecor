@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<style>
+    .form-container {
+        max-width: 100%;
+        background: linear-gradient(to right, #333, #555);
+        padding: 30px;
+        border-radius: 10px;
+        color: #24CC7B;
+        font-size: 1.5vw;
+    }
+
+    #inputcomentario,
+    #inputnota,
+    #inputcomentario:focus,
+    #inputnota:focus {
+        color: #6C757D;
+        background-color: #495057;
+        border-color: #6C757D;
+    }
+
+    .btn-primary {
+        background-color: #24CC7B;
+        border-color: #24CC7B;
+    }
+
+        .btn-primary:hover {
+            background-color: #128C5D;
+            border-color: #128C5D;
+        }
+
+    .fa {
+        margin-right: 5px;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        @using (Html.BeginForm("InserirAvaliacao", "Produto", FormMethod.Post))
+        {
+            <h2 class="text-center">Deixe uma avaliação!</h2>
+
+
+
+
+            <input type="hidden" name="idProd" value="@ViewBag.IdProduto" />
+            <div class="mb-3">
+                <label for="nota" class="form-label"><i class="fa fa-star"></i> Nota:</label>
+                <select class="form-select" id="inputnota" name="nota" required>
+                    <option value="" disabled selected>Escolha a nota</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="comentario" class="form-label"><i class="fa fa-comment"></i> Comentário:</label>
+                <textarea class="form-control" id="inputcomentario" name="comentario" rows="3" placeholder="Digite seu comentário"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Enviar Avaliação</button>
+        }
+    </div>
+</div>

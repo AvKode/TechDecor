@@ -1,0 +1,79 @@
+﻿body {
+    background-image: url("https://decoracaobrasil.com/wp-content/uploads/2022/06/decorac%CC%A7a%CC%83o-para-espac%CC%A7o-gamer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300vw;
+}
+
+.form-horizontal {
+    margin-left: 22vw;
+    padding: 4vw;
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 20px;
+    width: 46vw;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    margin-left: 4vw;
+}
+
+input.btn.btn-success.cad {
+    background-color: rgb(53, 37, 99) ;
+    display: flex;
+    justify-content: center;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    width: 20vw;
+    border-radius: 20vw;
+}
+
+input.btn.btn-success.ent {
+    display: flex;
+    justify-content: center;
+    margin-left: 1.8vw;
+    width: 20vw;
+    border-radius: 20vw;
+}
+
+label.control-label.col-md-2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 9vw;
+}
+
+hr {
+    display: none;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.backA {
+    color: white;
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: white;
+    padding: 11px;
+}
+
+p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+

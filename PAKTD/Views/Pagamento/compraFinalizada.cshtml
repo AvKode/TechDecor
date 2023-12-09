@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Compra Finalizada";
+}
+
+<link href="~/Style/CompFinalizadaStyle/CompFinalizadaStyle.css" rel="stylesheet" />
+<div class="container mt-5">
+    <div class="alert rounded-3" role="alert">
+        <div class="img-center-finl">
+            <img class="confirm-omg" src="https://clipart-library.com/new_gallery/131-1314108_validation-circle-green-check-png.png" />
+        </div>
+        <h2 class="alert-heading text-center">Pedido Finalizado!</h2>
+        <p class="mb-0 text-center">A sua compra foi concluída com sucesso. A reunião do seu serviço foi agendada para @ViewBag.DtServico.</p>
+        <p class="mb-0 text-center">@ViewBag.MensagemBoleto</p>
+        @if (ViewBag.LinkPagamento != null)
+        {
+            <a href="@ViewBag.LinkPagamento" target="_blank" class="a-blt-finl">Clique aqui!</a>
+        }
+        @Html.ActionLink("Continuar Comprando", "Index", "Home", new { area = "" }, new { @class = "nav-link vlt-finl" })
+    </div>
+</div>
+
+
+

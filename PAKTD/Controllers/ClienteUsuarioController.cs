@@ -23,10 +23,11 @@ namespace PAKTD.Controllers
         public ActionResult Logar(mUsuario us)
         {
 
-            mCliente mC = new mCliente();
-            if (aCliUsu.LogarCliUsu(us) == true)
+            mCliente mC;
+            if (aCliUsu.LogarCliUsu(us, out mC) == true)
             {
-               
+                Session["usuId"] = Convert.ToInt32(mC.IdCli);
+                Session["usuarioId"] = Convert.ToInt32(us.IdUsu);
                 Session["senLog"] = us.SenhaUsu.ToString();
                 if (us.TipoUsu == "A")
                 {
@@ -42,6 +43,7 @@ namespace PAKTD.Controllers
                 {
                   
                    Session["tU"] = "Cliente";
+                   
                     return RedirectToAction("Index", "Home");
                    
                 }
@@ -70,7 +72,7 @@ namespace PAKTD.Controllers
         {
 
                 aCliUsu.InserirCliUsu(cl, us);
-                Session["usuLog"] = us.NomeUsu.ToString();
+           
                 return RedirectToAction("Index", "Home");
 
         }
@@ -102,12 +104,13 @@ namespace PAKTD.Controllers
         }
 
         [HttpPost]
-        public ActionResult ClientePerfil(int id)
+        public ActionResult ClientePerfil(mCliente mC)
         {
 
-           
+            int id = Convert.ToInt32(Session["usuId"]);
 
-            return View();
+            aCliUsu.AtualizarCliente(mC, id);
+            return RedirectToAction("Index", "Home");
         }
     }
 }

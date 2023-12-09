@@ -1,0 +1,261 @@
+﻿body {
+    background-color: azure;
+}
+
+.carousel {
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+}
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.w-100 {
+    border-radius: 10px;
+    transition: 0.9s;
+}
+
+    .w-100:hover {
+        border-radius: 20px;
+        filter: contrast(140%);
+    }
+
+.img-carr {
+    display: flex;
+    justify-content: center;
+}
+
+.img-second1, .img-second2, .img-second3 {
+    width: 16vw;
+    height: 8vw;
+    border-radius: 8px;
+    margin-left: 2vw;
+}
+
+.img-DivSecond {
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    margin-right: 1vw;
+}
+
+h1.prod-title {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: rgba(0, 191, 99, 1);
+}
+
+.sec-prod {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+}
+
+a.btn.btn-success, a.btn.btn-warning {
+    display: block;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.card-title, .card-text {
+    text-align: center;
+    padding: 1px;
+}
+
+img.card-img-top {
+    padding: 8px;
+    border-radius: 12px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+    img.card-img-top:hover {
+        filter: contrast(130%);
+        height: 210px;
+    }
+
+.card-img-bt {
+    width: 10vw;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.img-cashback {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 13px;
+}
+
+img.img-cash {
+    width: 49vw;
+}
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    width: 100%;
+    /*  padding-right: var(--bs-gutter-x, 0.75rem);
+*/ /*padding-left: var(--bs-gutter-x, 0.75rem);*/
+    /*margin-right: auto;
+    margin-left: auto;*/
+}
+
+@media (min-width: 576px) {
+    .container-sm, .container {
+            max-width: 5400px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md, .container-sm, .container {
+            max-width: 7200px;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg, .container-md, .container-sm, .container {
+            max-width: 9060px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 11400px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+            max-width: 13020px;
+
+    }
+}
+
+
+.card {
+    background-color: black;
+}
+
+h5.card-title {
+    color: rgba(0, 191, 99, 1);
+}
+
+p.card-text {
+    color: rgba(0, 191, 99, 1);
+}
+
+h5#inputValor {
+    color: rgba(0, 191, 99, 1);
+}
+
+a.btn.btn-success.plns {
+    background-color: black;
+    color: rgba(0, 191, 99, 1);
+    margin-bottom: 10px;
+}
+
+hr.hr-plns {
+    margin: 20px 0;
+    color: white;
+}
+
+.planos-subdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-right: 30px;
+}
+
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.ng-div {
+    background-color: black;
+    padding: 80px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+h1.ng-h1 {
+    color: rgba(0, 191, 99, 1);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+a.btn.btn-success.ng {
+    width: 40vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+    .planos-subdiv {
+        display: block;
+        margin-left: 11.9vw;
+    }
+    .card {
+        margin: 20px;
+    }
+}
+
+.dest-div {
+    background: linear-gradient(to top right, black 0%, black 80%, rgba(0, 191, 99, 1) 50%, rgba(0, 191, 99, 1) 100%);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.dest-subdiv {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+.carousel {
+    width: 103vw;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+    margin-left: -5vw;
+    border-radius: 0px;
+    margin-top: -15px;
+}
+
+img.img-dest {
+    width: 15vw;
+    margin-left: 77vw;
+    margin-top: -14vw;
+}
+
+span.carousel-control-next-icon {
+    display: none;
+}
+
+span.carousel-control-prev-icon {
+    display: none;
+}

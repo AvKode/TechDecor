@@ -1,0 +1,30 @@
+img.confirm-omg {
+    width: 10vw;
+}
+
+.img-center-finl {
+    display: flex;
+    justify-content: center;
+}
+
+a.a-blt-finl {
+    text-decoration: none;
+    color: white;
+    background-color: #009952;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 4vw;
+}
+
+a.nav-link.vlt-finl {
+    text-decoration: none;
+    color: white;
+    background-color: #352563;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 4vw;
+}

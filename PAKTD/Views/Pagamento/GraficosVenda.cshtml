@@ -1,76 +1,106 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "GraficosVenda";
     Layout = "~/Views/Dashboard/_Layout.cshtml";
 }
-
-
 
 <div>
     <canvas id="myChart" style="width: 8vw !important; height: 3vw !important;"></canvas>
 </div>
 
-
 <div>
     <canvas id="myChart2" style="width: 2vw !important; height: 1vw !important;"></canvas>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script>
-  const ctx = document.getElementById('myChart');
-    const ctxBar = document.getElementById('myChart2');
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
-            datasets: [{
-                label: 'Vendas',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
+    $(document).ready(function () {
+        // Function to update the first chart
+        function updateFirstChart(data) {
+            const monthNames = [
+                'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+                'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+            ];
 
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 205, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(201, 203, 207, 0.2)'
-                ],
-                borderColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(255, 159, 64)',
-                    'rgb(255, 205, 86)',
-                    'rgb(75, 192, 192)',
-                    'rgb(54, 162, 235)',
-                    'rgb(153, 102, 255)',
-                    'rgb(201, 203, 207)'
-                ],
-                borderWidth: 1
-
-
-            }],
-            
+            const ctx = document.getElementById('myChart');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.map(item => monthNames[item.Mes - 1]), // Adjust for zero-based index
+                    datasets: [{
+                        label: 'Vendas',
+                        data: data.map(item => item.NumeroDeVendas),
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 205, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(201, 203, 207, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(255, 159, 64)',
+                            'rgb(255, 205, 86)',
+                            'rgb(75, 192, 192)',
+                            'rgb(54, 162, 235)',
+                            'rgb(153, 102, 255)',
+                            'rgb(201, 203, 207)'
+                        ],
+                        borderWidth: 1
+                    }],
+                }
+            });
         }
-    });
 
-    new Chart(ctxBar, {
-        type: 'doughnut',
-        data: {
-            labels: [
-                'PIX',
-                'BOLETO',
-                'CARTÃO DE CRÉDITO'
-            ],
-            datasets: [{
-                label: 'Vendas por Pagamento',
-                data: [300, 50, 100],
-                backgroundColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(54, 162, 235)',
-                    'rgb(255, 205, 86)'
-                ],
-                hoverOffset: 4
-            }]
+        // Function to update the second chart
+        function updateSecondChart(data) {
+            const ctxBar = document.getElementById('myChart2');
+            new Chart(ctxBar, {
+                type: 'doughnut',
+                data: {
+                    labels: data.map(item => item.Pagamento),
+                    datasets: [{
+                        label: 'Vendas por Pagamento',
+                        data: data.map(item => item.NumeroDeVendas),
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(154, 262, 235, 0.6)',
+                            'rgba(15, 199, 232, 0.6)',
+                            'rgba(255, 205, 86, 0.6)'
+                        ],
+                        hoverOffset: 4
+                    }]
+                }
+            });
         }
+
+        // Fetch data from the server and update the first chart
+        $.ajax({
+            url: '@Url.Action("DadosVendasPorMes", "Pagamento")',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                updateFirstChart(data);
+            },
+            error: function () {
+                console.error('Error fetching data for DadosVendasPorMes.');
+            }
+        });
+
+        // Fetch data from the server and update the second chart
+        $.ajax({
+            url: '@Url.Action("DadosVendasPorPagamento", "Pagamento")',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                updateSecondChart(data);
+            },
+            error: function () {
+                console.error('Error fetching data for DadosVendasPorPagamento.');
+            }
+        });
     });
 </script>

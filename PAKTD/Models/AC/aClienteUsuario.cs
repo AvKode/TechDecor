@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Configuration;
 using MySql.Data.MySqlClient;
+using System.Web.Mvc;
 using PAKTD.Models.MO;
 
 namespace PAKTD.Models.AC
@@ -33,29 +34,51 @@ namespace PAKTD.Models.AC
             cmd.ExecuteNonQuery();
             con.MyDesConectarBD();
         }
-        public bool LogarCliUsu(mUsuario us)
+        public bool LogarCliUsu(mUsuario us, out mCliente mC)
         {
+            mC = new mCliente();
             MySqlCommand cmd = new MySqlCommand("call pcd_Logar(@nmUsu, @seUsu)", con.MyConectarBD());
             cmd.Parameters.Add("@nmUsu", MySqlDbType.VarChar).Value = us.NomeUsu;
             cmd.Parameters.Add("@seUsu", MySqlDbType.VarChar).Value = us.SenhaUsu;
-            dr = cmd.ExecuteReader();
-            if (dr != null)
+
+            using (MySqlDataReader dr = cmd.ExecuteReader())
             {
-                while (dr.Read())
+             
+                if (dr.Read())
                 {
-                    us.NomeUsu = dr["nome_Usu"].ToString();
-                    us.SenhaUsu = dr["senha_Usu"].ToString();
+                    int idClienteIndex;
+                    try
+                    {
+                        idClienteIndex = dr.GetOrdinal("id");
+                    }
+                    catch (IndexOutOfRangeException)
+                    {
+                        idClienteIndex = -1;
+                    }
+
+                    if (idClienteIndex >= 0)
+                    {
+                        mC.IdCli = Convert.ToInt32(dr["id"]);
+                        us.IdUsu = Convert.ToInt32(dr["id_Usu"]);
+                    }
+
                     us.TipoUsu = dr["tipo_Usu"].ToString();
+                    con.MyDesConectarBD();
+                    return true;
                 }
-                con.MyDesConectarBD();
-                return true;
-            }
-            else
-            {
-                con.MyDesConectarBD();
-                return false;
+                else
+                {
+                    con.MyDesConectarBD();
+                    return false;
+                }
             }
         }
+
+
+
+
+
+
         public List<mCliente> BuscarCli()
         {
 
@@ -91,22 +114,7 @@ namespace PAKTD.Models.AC
 
             return cliList;
         }
-        public void AlterarCli(mCliente cl, mUsuario us, int id)
-        {
-            MySqlCommand cmd = new MySqlCommand("call sp_UpdateCliente(@id)", con.MyConectarBD());
-            cmd.Parameters.Add("@id", MySqlDbType.Int16).Value = id;
-            cmd.Parameters.Add("@nmCli", MySqlDbType.VarChar).Value = cl.NmCli;
-            cmd.Parameters.Add("@emCli", MySqlDbType.VarChar).Value = cl.EmailCli;
-            cmd.Parameters.Add("@foCli", MySqlDbType.VarChar).Value = cl.FoneCli;
-            cmd.Parameters.Add("@cepCli", MySqlDbType.VarChar).Value = cl.CepCli;
-            cmd.Parameters.Add("@coCasa", MySqlDbType.VarChar).Value = cl.ComCasa;
-            cmd.Parameters.Add("@idUsu", MySqlDbType.Int16).Value = us.IdUsu;
-            cmd.Parameters.Add("@nmUsu", MySqlDbType.VarChar).Value = us.NomeUsu;
-            cmd.Parameters.Add("@seUsu", MySqlDbType.VarChar).Value = us.SenhaUsu;
-            cmd.Parameters.Add("@tpUsu", MySqlDbType.VarChar).Value = us.TipoUsu;
-            cmd.ExecuteNonQuery();
-            con.MyDesConectarBD();
-        }
+       
 
         public void DeletarCli(int id)
         {
@@ -117,5 +125,62 @@ namespace PAKTD.Models.AC
             con.MyDesConectarBD();
         }
 
+        public List<mCliente> BuscarDadosClientes(int id)
+        {
+            List<mCliente> ClienteList = new List<mCliente>();
+
+            MySqlCommand cmd = new MySqlCommand("call spDadosCliente(@id)", con.MyConectarBD());
+            cmd.Parameters.AddWithValue("@id", id);
+
+            cmd.ExecuteNonQuery();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            con.MyDesConectarBD();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                ClienteList.Add(new mCliente
+                {
+
+                    NmCli = dr["nome_Cli"].ToString(),
+                    EmailCli = dr["email_Cli"].ToString(),
+                    CpfCli = dr["cpf_Cli"].ToString(),
+                    CepCli = dr["Cep_Cli"].ToString(),
+                    NoCasa = dr["no_log_Cli"].ToString(),
+                    ComCasa = dr["complemento_Cli"].ToString(),
+                }
+
+                ) ; 
+
+
+            }
+
+            return ClienteList;
+        }
+
+        public void AtualizarCliente(mCliente mC, int id)
+        {
+
+            MySqlCommand cmd = new MySqlCommand("call sp_UpdateCliente(@id, @nome, @email,@cpf,@dtNasc,@noLogra,@complementoCli,@cep,@telefone)", con.MyConectarBD());
+
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@nome", mC.NmCli);
+            cmd.Parameters.AddWithValue("@email", mC.EmailCli);
+            cmd.Parameters.AddWithValue("@cpf", mC.CpfCli);
+            cmd.Parameters.AddWithValue("@dtNasc", mC.DtNascCli) ;
+            cmd.Parameters.AddWithValue("@noLogra", mC.NoCasa);
+            cmd.Parameters.AddWithValue("@complementoCli", mC.ComCasa) ;
+            cmd.Parameters.AddWithValue("@cep", mC.CepCli);
+            cmd.Parameters.AddWithValue("@telefone", mC.FoneCli);
+
+            cmd.ExecuteNonQuery();
+
+            con.MyDesConectarBD();
+
+        }
     }
 }

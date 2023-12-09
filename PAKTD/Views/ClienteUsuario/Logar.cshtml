@@ -1,17 +1,19 @@
 ﻿@model PAKTD.Models.MO.mUsuario
 
 @{
-    ViewBag.Title = "Logar";
+    ViewBag.Title = "Login";
 }
 
-<h2>Logar</h2>
 
-@using (Html.BeginForm()) 
+<link href="~/Style/UsuarioStyle/Usu.css" rel="stylesheet" />
+
+
+
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
-        <h4>mUsuario</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
@@ -39,6 +41,6 @@
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+<div class="backA">
+    @Html.ActionLink("Voltar Para o Início", "Index", "Home")
 </div>

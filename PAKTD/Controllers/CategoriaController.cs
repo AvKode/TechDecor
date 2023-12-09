@@ -33,7 +33,7 @@ namespace PAKTD.Controllers
             {
                 aC.InserirCat(mC);
             }
-          return RedirectToAction("ListarCategoria", "Categoria");
+            return RedirectToAction("ListarCategoria", "Categoria");
         }
 
         public ActionResult ExcluirCategoria(int id)

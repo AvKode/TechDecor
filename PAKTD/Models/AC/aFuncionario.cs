@@ -16,7 +16,7 @@ namespace PAKTD.Models.AC
         {
             List<mUsuario> funcList = new List<mUsuario>();
            
-            MySqlCommand cmd = new MySqlCommand("call pcd_selectFuncionario('F')", con.MyConectarBD());
+            MySqlCommand cmd = new MySqlCommand("call pcd_Select_UsuarioPorTipo('F')", con.MyConectarBD());
 
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
@@ -46,7 +46,7 @@ namespace PAKTD.Models.AC
 
         public void InserirFuncionario(mUsuario mU)
         {
-            MySqlCommand cmd = new MySqlCommand("call pcd_insertFuncionario(@nmFunc, @seFunc,'F')", con.MyConectarBD());
+            MySqlCommand cmd = new MySqlCommand("call pcd_insertUsuario(@nmFunc, @seFunc,'F')", con.MyConectarBD());
             cmd.Parameters.AddWithValue("@nmFunc", mU.NomeUsu);
             cmd.Parameters.AddWithValue("@seFunc", mU.SenhaUsu);
          
